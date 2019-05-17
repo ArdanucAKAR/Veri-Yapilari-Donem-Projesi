@@ -1,0 +1,45 @@
+{
+  "root": {
+    "data": {
+      "id": 4,
+      "Name": "Hotel1"
+    },
+    "left": {
+      "data": {
+        "id": 6,
+        "Name": "Hotel5"
+      },
+      "left": {
+        "data": {
+          "id": 45,
+          "Name": "Hotel7"
+        },
+        "left": null,
+        "right": null
+      },
+      "right": null
+    },
+    "right": {
+      "data": {
+        "id": 12,
+        "Name": "Hotel2"
+      },
+      "left": {
+        "data": {
+          "id": 7,
+          "Name": "Hotel4"
+        },
+        "left": null,
+        "right": null
+      },
+      "right": {
+        "data": {
+          "id": 1,
+          "Name": "Hotel3"
+        },
+        "left": null,
+        "right": null
+      }
+    }
+  }
+}

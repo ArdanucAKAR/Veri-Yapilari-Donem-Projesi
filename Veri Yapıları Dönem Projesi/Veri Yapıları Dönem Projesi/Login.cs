@@ -15,38 +15,30 @@ namespace Veri_Yapıları_Dönem_Projesi
         public Login()
         {
             InitializeComponent();
+            Singleton.Instance().Initialize();
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
-            Hotel a = new Hotel();
-            Customer b = new Customer();
-            Comment c = new Comment();
-            ContactInformation d = new ContactInformation();
-            Staff f = new Staff();
-            f.Department = "";
-            f.Contact = d;
-            f.FullName = "Ardanuc";
-            f.Position = "";
-            f.Rate = 10;
-            f.TRId = "0";
-            d.Address = "adres";
-            d.EMail = "mail";
-            d.PhoneNumber = "0";
-            c.Customer = b;
-            c.Content = "";
-            a.Comments.Add(c);
-            a.Contact = d;
-            a.Name = "Kaşar Otel";
-            a.NumRooms = 100;
-            a.Rate = 0;
-            a.Staff.Add(f);
-            a.Stars = 10;
-            a.Town = "ADANA";
+        
 
-            LinkedList linkedList = new LinkedList();
-            linkedList.InsertFirst(f);
-            //textBox1.Text = (Staff)linkedList.GetElement(1).Data;
+            Singleton.Instance().hotels.PreOrder();
+            foreach (Hotel hotel in Singleton.Instance().hotels.PrintTree())
+            {
+                MessageBox.Show("Id: " + hotel.Id.ToString() + "\n" + "Adı: "+hotel.Name);
+
+            }
+
+
+            //LinkedList linkedList = new LinkedList();
+            //linkedList.InsertFirst(f);
+            //linkedList.InsertFirst(s);
+
+            //for (int i = 0; i < linkedList.Size; i++)
+            //{
+            //    Staff ss = (Staff)linkedList.GetElement(i).Data;
+            //    MessageBox.Show(ss.FullName);
+            //}
         }
     }
 }

@@ -8,6 +8,7 @@ namespace Veri_Yapıları_Dönem_Projesi
 {
     public class Hotel
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string City { get; set; }
         public string Town { get; set; }
@@ -17,5 +18,12 @@ namespace Veri_Yapıları_Dönem_Projesi
         public int Rate { get; set; }
         public List<Comment> Comments{ get; set; }
         public List<Staff> Staff { get; set; }
+        
+        public Hotel()
+        {
+            Comments = new List<Comment>();
+            Staff = new List<Staff>();
+        }
     }
+    
 }

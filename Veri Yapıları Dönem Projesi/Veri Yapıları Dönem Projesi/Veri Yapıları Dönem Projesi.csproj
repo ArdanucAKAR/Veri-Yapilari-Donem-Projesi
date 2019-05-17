@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\BinnaryTree\BinaryTree.cs" />
+    <Compile Include="Classes\BinnaryTree\BinaryTreeNode.cs" />
     <Compile Include="Classes\Comment.cs" />
     <Compile Include="Classes\ContactInformation.cs" />
     <Compile Include="Classes\Customer.cs" />
@@ -56,6 +61,7 @@
     <Compile Include="Classes\Manager.cs" />
     <Compile Include="Classes\Singleton.cs" />
     <Compile Include="Classes\Staff.cs" />
+    <Compile Include="Utils\TextReaderUtil.cs" />
     <Compile Include="Enums\RoomType.cs" />
     <Compile Include="trash\Form1.cs">
       <SubType>Form</SubType>
@@ -91,6 +97,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
