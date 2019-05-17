@@ -46,14 +46,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Classes\Comment.cs" />
+    <Compile Include="Classes\ContactInformation.cs" />
+    <Compile Include="Classes\Customer.cs" />
+    <Compile Include="Classes\Hotel.cs" />
+    <Compile Include="Classes\LinkedList\LinkedList.cs" />
+    <Compile Include="Classes\LinkedList\ListADT.cs" />
+    <Compile Include="Classes\LinkedList\Node.cs" />
+    <Compile Include="Classes\Manager.cs" />
+    <Compile Include="Classes\Singleton.cs" />
+    <Compile Include="Classes\Staff.cs" />
+    <Compile Include="Enums\RoomType.cs" />
+    <Compile Include="trash\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="trash\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trash\HashEntry.cs" />
+    <Compile Include="trash\HashMap.cs" />
+    <Compile Include="trash\HashMapChain.cs" />
+    <Compile Include="trash\LinkedHashEntry.cs" />
+    <Compile Include="trash\Personel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="trash\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
