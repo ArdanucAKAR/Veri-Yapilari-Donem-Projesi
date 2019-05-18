@@ -2,17 +2,26 @@
   "root": {
     "data": {
       "id": 4,
-      "Name": "Hotel1"
+      "Name": "Hotel1",
+      "Point": 25,
+      "Raters": 3,
+      "Rate" : 7
     },
     "left": {
       "data": {
         "id": 6,
-        "Name": "Hotel5"
+        "Name": "Hotel5",
+	"Point": 21,
+        "Raters": 3,
+        "Rate" : 7
       },
       "left": {
         "data": {
           "id": 45,
-          "Name": "Hotel7"
+          "Name": "Hotel7",
+		"Point": 21,
+        "Raters": 3,
+        "Rate" : 7
         },
         "left": null,
         "right": null
@@ -22,12 +31,18 @@
     "right": {
       "data": {
         "id": 12,
-        "Name": "Hotel2"
+        "Name": "Hotel2",
+	"Point": 21,
+        "Raters": 3,
+        "Rate" : 7
       },
       "left": {
         "data": {
           "id": 7,
-          "Name": "Hotel4"
+          "Name": "Hotel4",
+	"Point": 21,
+        "Raters": 3,
+        "Rate" : 7
         },
         "left": null,
         "right": null
@@ -35,7 +50,10 @@
       "right": {
         "data": {
           "id": 1,
-          "Name": "Hotel3"
+          "Name": "Hotel3",
+	"Point": 21,
+        "Raters": 3,
+        "Rate" : 7
         },
         "left": null,
         "right": null

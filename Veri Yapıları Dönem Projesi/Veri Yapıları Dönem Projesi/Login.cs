@@ -23,12 +23,20 @@ namespace Veri_Yapıları_Dönem_Projesi
         
 
             Singleton.Instance().hotels.PreOrder();
+
+            Heap h = new Heap(Singleton.Instance().hotels.NodeCount());
+            Singleton.Instance().hotels.PrintTree().ToList()[1].Name = "Bok Oteli";
             foreach (Hotel hotel in Singleton.Instance().hotels.PrintTree())
             {
-                MessageBox.Show("Id: " + hotel.Id.ToString() + "\n" + "Adı: "+hotel.Name);
+                h.Insert(hotel);
+                //MessageBox.Show("Id: " + hotel.Id.ToString() + "\n" + "Adı: "+hotel.Name);
 
             }
+            foreach (var item in h.DisplayHeap())
+            {
+                MessageBox.Show("ad:" + item.Name + "\nrate:" +item.Rate);
 
+            }
 
             //LinkedList linkedList = new LinkedList();
             //linkedList.InsertFirst(f);

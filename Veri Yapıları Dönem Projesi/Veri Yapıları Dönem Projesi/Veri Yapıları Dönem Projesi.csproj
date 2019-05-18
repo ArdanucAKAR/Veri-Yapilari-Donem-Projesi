@@ -54,6 +54,9 @@
     <Compile Include="Classes\Comment.cs" />
     <Compile Include="Classes\ContactInformation.cs" />
     <Compile Include="Classes\Customer.cs" />
+    <Compile Include="Classes\Heap\Heap.cs" />
+    <Compile Include="Classes\Heap\HeapDugumu.cs" />
+    <Compile Include="Classes\Heap\HeapSort.cs" />
     <Compile Include="Classes\Hotel.cs" />
     <Compile Include="Classes\LinkedList\LinkedList.cs" />
     <Compile Include="Classes\LinkedList\ListADT.cs" />

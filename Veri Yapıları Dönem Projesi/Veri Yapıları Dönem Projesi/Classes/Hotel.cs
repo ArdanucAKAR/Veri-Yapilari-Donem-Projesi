@@ -15,7 +15,17 @@ namespace Veri_Yapıları_Dönem_Projesi
         public ContactInformation Contact { get; set; }
         public int Stars { get; set; }
         public int NumRooms { get; set; }
-        public int Rate { get; set; }
+        public int Point { get; set; }
+        public int Raters { get; set; }
+
+        private float rate;
+        public float Rate { get { return rate; } set {
+                if (0 != Raters)
+                {
+                    rate = (float)Point / Raters;
+                }
+            } }
+
         public List<Comment> Comments{ get; set; }
         public List<Staff> Staff { get; set; }
         
@@ -23,6 +33,13 @@ namespace Veri_Yapıları_Dönem_Projesi
         {
             Comments = new List<Comment>();
             Staff = new List<Staff>();
+            
+        }
+        public void RateTheHotel(int rate)
+        {
+            Point += rate;
+            Raters++;
+            Rate = 1; // Prop'un setterını tetikler.
         }
     }
     
