@@ -5,7 +5,9 @@
       "Name": "Hotel1",
       "Point": 25,
       "Raters": 3,
-      "Rate" : 7
+      "Rate" : 7,
+      "City":"Ankara",
+      "Town":"Pornova"
     },
     "left": {
       "data": {
@@ -13,7 +15,9 @@
         "Name": "Hotel5",
 	"Point": 21,
         "Raters": 3,
-        "Rate" : 7
+        "Rate" : 7,      
+"City":"Ankara",
+      "Town":"Pornova"
       },
       "left": {
         "data": {
@@ -21,7 +25,9 @@
           "Name": "Hotel7",
 		"Point": 21,
         "Raters": 3,
-        "Rate" : 7
+        "Rate" : 7,
+      "City":"Ýzmir",
+      "Town":"Þornova"
         },
         "left": null,
         "right": null
@@ -34,7 +40,9 @@
         "Name": "Hotel2",
 	"Point": 21,
         "Raters": 3,
-        "Rate" : 7
+        "Rate" : 7,
+      "City":"Ýzmir",
+      "Town":"Hornova"
       },
       "left": {
         "data": {
@@ -42,7 +50,9 @@
           "Name": "Hotel4",
 	"Point": 21,
         "Raters": 3,
-        "Rate" : 7
+        "Rate" : 7,
+      "City":"Ýzmir",
+      "Town":"Kornova"
         },
         "left": null,
         "right": null
@@ -53,7 +63,9 @@
           "Name": "Hotel3",
 	"Point": 21,
         "Raters": 3,
-        "Rate" : 7
+        "Rate" : 7,
+      "City":"Ýzmir",
+      "Town":"Bornova"
         },
         "left": null,
         "right": null

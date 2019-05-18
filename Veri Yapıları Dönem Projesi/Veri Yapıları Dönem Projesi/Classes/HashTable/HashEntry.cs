@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Veri_Yapıları_Dönem_Projesi
 {
-    public class LinkedHashEntry
+    public class HashEntry
     {
-        private int anahtar;     
+        private int anahtar;
 
+       
         private object deger;
-
-        private LinkedHashEntry next;
 
         public object Deger
         {
@@ -24,21 +23,12 @@ namespace Veri_Yapıları_Dönem_Projesi
             get { return anahtar; }
             set { anahtar = value; }
         }
-        
-
-        public LinkedHashEntry Next
-        {
-            get { return next; }
-            set { next = value; }
-        }
-
-
-        public LinkedHashEntry(int anahtar, object deger)
+        public HashEntry(int anahtar, object deger)
         {
             this.anahtar = anahtar;
             this.deger = deger;
-            this.next = null;
         }
+
 
     }
 }

@@ -8,23 +8,24 @@ namespace Veri_Yapıları_Dönem_Projesi
 {
     public class HashMapChain
     {
-       int TABLE_SIZE = 10;
+        int TABLE_SIZE = 200;
 
-      LinkedHashEntry[] table;
+        LinkedHashEntry[] table;
 
-
-      public HashMapChain()
+        public HashMapChain()
         {
             table = new LinkedHashEntry[TABLE_SIZE];
             for (int i = 0; i < TABLE_SIZE; i++)
                 table[i] = null;
         }
-        public void AddPersonel(int key, object value)
+
+        public void AddHotel(int key, object value)
         {
             int hash = (key % TABLE_SIZE);
             if (table[hash] == null)
                 table[hash] = new LinkedHashEntry(key, value);
-            else {
+            else
+            {
                 LinkedHashEntry entry = table[hash];
                 while (entry.Next != null && entry.Anahtar != key)
                     entry = entry.Next;
@@ -34,22 +35,22 @@ namespace Veri_Yapıları_Dönem_Projesi
                     entry.Next = new LinkedHashEntry(key, value);
             }
         }
-        public Personel GetPersonel(int key)
+
+        public Hotel GetHotel(int key)
         {
             int hash = (key % TABLE_SIZE);
             if (table[hash] == null)
                 return null;
-            else {
+            else
+            {
                 LinkedHashEntry entry = table[hash];
                 while (entry != null && entry.Anahtar != key)
                     entry = entry.Next;
                 if (entry == null)
                     return null;
                 else
-                    return (Personel)entry.Deger;
+                    return (Hotel)entry.Deger;
             }
         }
-
-        
     }
 }

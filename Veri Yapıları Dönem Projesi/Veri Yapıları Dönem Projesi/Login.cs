@@ -17,15 +17,17 @@ namespace Veri_Yapıları_Dönem_Projesi
             InitializeComponent();
             Singleton.Instance().Initialize();
         }
-
+        Heap h;
+        HashMapChain hashTableChain = new HashMapChain();
         private void Login_Load(object sender, EventArgs e)
         {
-        
 
+            h = new Heap(Singleton.Instance().hotels.NodeCount());
             Singleton.Instance().hotels.PreOrder();
 
-            Heap h = new Heap(Singleton.Instance().hotels.NodeCount());
+
             Singleton.Instance().hotels.PrintTree().ToList()[1].Name = "Bok Oteli";
+
             foreach (Hotel hotel in Singleton.Instance().hotels.PrintTree())
             {
                 h.Insert(hotel);
@@ -34,10 +36,10 @@ namespace Veri_Yapıları_Dönem_Projesi
             }
             foreach (var item in h.DisplayHeap())
             {
-                MessageBox.Show("ad:" + item.Name + "\nrate:" +item.Rate);
+                //MessageBox.Show("ad:" + item.Name + "\nrate:" +item.Rate);
 
             }
-
+            Hash("Ankara", "Pornova");
             //LinkedList linkedList = new LinkedList();
             //linkedList.InsertFirst(f);
             //linkedList.InsertFirst(s);
@@ -47,6 +49,27 @@ namespace Veri_Yapıları_Dönem_Projesi
             //    Staff ss = (Staff)linkedList.GetElement(i).Data;
             //    MessageBox.Show(ss.FullName);
             //}
+        }
+        void Hash(string city, string town)
+        {
+            List<Hotel> a = new List<Hotel>();
+            int key = 0;
+            foreach (var item in h.DisplayHeap())
+            {
+                if (item.City == city && item.Town == town)
+                {
+                    if (key == 0)
+                    {
+                        foreach (char c in item.Town)
+                            key += Convert.ToInt16(c);
+                        foreach (char c in item.City)
+                            key += Convert.ToInt16(c);
+                    }
+                    a.Add(item);
+                }
+            }
+            hashTableChain.AddHotel(key, a);
+            MessageBox.Show(key.ToString());
         }
     }
 }

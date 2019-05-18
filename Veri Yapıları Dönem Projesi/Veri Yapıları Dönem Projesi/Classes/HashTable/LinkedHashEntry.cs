@@ -6,34 +6,37 @@ using System.Threading.Tasks;
 
 namespace Veri_Yapıları_Dönem_Projesi
 {
-    public class HashEntry
+    public class LinkedHashEntry
     {
-        private int anahtar;
-        private object durum;       
+        private int anahtar;     
+
         private object deger;
+
+        private LinkedHashEntry next;
 
         public object Deger
         {
             get { return deger; }
             set { deger = value; }
         }
+
         public int Anahtar
         {
             get { return anahtar; }
             set { anahtar = value; }
-        }
-        public object Durum
+        }        
+
+        public LinkedHashEntry Next
         {
-            get { return durum; }
-            set { durum = value; }
+            get { return next; }
+            set { next = value; }
         }
-        public HashEntry(int anahtar, object deger)
+
+        public LinkedHashEntry(int anahtar, object deger)
         {
             this.anahtar = anahtar;
             this.deger = deger;
-            this.durum = 0;
+            this.next = null;
         }
-
-
     }
 }
