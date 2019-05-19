@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Veri_Yapıları_Dönem_Projesi
 {
-    public abstract class User
+    public class Manager
     {
         public string Username { get; set; }
         public string Password { get; set; }

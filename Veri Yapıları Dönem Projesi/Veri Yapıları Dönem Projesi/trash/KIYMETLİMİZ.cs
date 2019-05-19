@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Veri_Yapıları_Dönem_Projesi.trash
 {
-    class Class1
+    class KIYMETLİMİZ
     {
     }
     //public Login()

@@ -64,27 +64,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\BinnaryTree\BinaryTree.cs" />
-    <Compile Include="Classes\BinnaryTree\BinaryTreeNode.cs" />
+    <Compile Include="Utils\DataStructures\BinnaryTree\BinaryTree.cs" />
+    <Compile Include="Utils\DataStructures\BinnaryTree\BinaryTreeNode.cs" />
     <Compile Include="Classes\Comment.cs" />
-    <Compile Include="Classes\ContactInformation.cs" />
-    <Compile Include="Classes\Customer.cs" />
-    <Compile Include="Classes\HashTable\HashEntry.cs" />
-    <Compile Include="Classes\HashTable\HashMapChain.cs" />
-    <Compile Include="Classes\HashTable\LinkedHashEntry.cs" />
-    <Compile Include="Classes\Heap\Heap.cs" />
-    <Compile Include="Classes\Heap\HeapDugumu.cs" />
-    <Compile Include="Classes\Heap\HeapSort.cs" />
+    <Compile Include="Classes\User\ContactInformation.cs" />
+    <Compile Include="Classes\User\Customer.cs" />
+    <Compile Include="Utils\DataStructures\HashTable\HashEntry.cs" />
+    <Compile Include="Utils\DataStructures\HashTable\HashMapChain.cs" />
+    <Compile Include="Utils\DataStructures\HashTable\LinkedHashEntry.cs" />
+    <Compile Include="Utils\DataStructures\Heap\Heap.cs" />
+    <Compile Include="Utils\DataStructures\Heap\HeapDugumu.cs" />
+    <Compile Include="Utils\DataStructures\Heap\HeapSort.cs" />
     <Compile Include="Classes\Hotel.cs" />
-    <Compile Include="Classes\LinkedList\LinkedList.cs" />
-    <Compile Include="Classes\LinkedList\ListADT.cs" />
-    <Compile Include="Classes\LinkedList\Node.cs" />
-    <Compile Include="Classes\Manager.cs" />
-    <Compile Include="Classes\Singleton.cs" />
-    <Compile Include="Classes\Stack\ArrayTypedStack.cs" />
-    <Compile Include="Classes\Stack\IStack.cs" />
+    <Compile Include="Utils\DataStructures\LinkedList\LinkedList.cs" />
+    <Compile Include="Utils\DataStructures\LinkedList\ListADT.cs" />
+    <Compile Include="Utils\DataStructures\LinkedList\Node.cs" />
+    <Compile Include="Classes\User\Manager.cs" />
+    <Compile Include="Utils\Singleton.cs" />
+    <Compile Include="Utils\DataStructures\Stack\ArrayTypedStack.cs" />
+    <Compile Include="Utils\DataStructures\Stack\IStack.cs" />
     <Compile Include="Classes\Staff.cs" />
-    <Compile Include="Classes\User.cs" />
     <Compile Include="CustomerPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,7 +96,7 @@
     <Compile Include="ManagerPanel.Designer.cs">
       <DependentUpon>ManagerPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="trash\Class1.cs" />
+    <Compile Include="trash\KIYMETLİMİZ.cs" />
     <Compile Include="Utils\AuthenticationService.cs" />
     <Compile Include="Utils\TextReaderUtil.cs" />
     <Compile Include="Enums\RoomType.cs" />
