@@ -19,21 +19,26 @@ namespace Veri_Yapıları_Dönem_Projesi
         public int Raters { get; set; }
 
         private float rate;
-        public float Rate { get { return rate; } set {
+        public float Rate
+        {
+            get { return rate; }
+            set
+            {
                 if (0 != Raters)
                 {
                     rate = (float)Point / Raters;
                 }
-            } }
+            }
+        }
 
-        public List<Comment> Comments{ get; set; }
+        public List<Comment> Comments { get; set; }
         public List<Staff> Staff { get; set; }
-        
+
         public Hotel()
         {
             Comments = new List<Comment>();
             Staff = new List<Staff>();
-            
+
         }
         public void RateTheHotel(int rate)
         {
@@ -42,5 +47,5 @@ namespace Veri_Yapıları_Dönem_Projesi
             Rate = 1; // Prop'un setterını tetikler.
         }
     }
-    
+
 }

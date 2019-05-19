@@ -16,60 +16,35 @@ namespace Veri_Yapıları_Dönem_Projesi
         {
             InitializeComponent();
             Singleton.Instance().Initialize();
+            WindowManager.OpenForm(this);
         }
-        Heap h;
-        HashMapChain hashTableChain = new HashMapChain();
+
         private void Login_Load(object sender, EventArgs e)
         {
 
-            h = new Heap(Singleton.Instance().hotels.NodeCount());
-            Singleton.Instance().hotels.PreOrder();
-
-
-            Singleton.Instance().hotels.PrintTree().ToList()[1].Name = "Bok Oteli";
-
-            foreach (Hotel hotel in Singleton.Instance().hotels.PrintTree())
-            {
-                h.Insert(hotel);
-                //MessageBox.Show("Id: " + hotel.Id.ToString() + "\n" + "Adı: "+hotel.Name);
-
-            }
-            foreach (var item in h.DisplayHeap())
-            {
-                //MessageBox.Show("ad:" + item.Name + "\nrate:" +item.Rate);
-
-            }
-            Hash("Ankara", "Pornova");
-            //LinkedList linkedList = new LinkedList();
-            //linkedList.InsertFirst(f);
-            //linkedList.InsertFirst(s);
-
-            //for (int i = 0; i < linkedList.Size; i++)
-            //{
-            //    Staff ss = (Staff)linkedList.GetElement(i).Data;
-            //    MessageBox.Show(ss.FullName);
-            //}
         }
-        void Hash(string city, string town)
+
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            List<Hotel> a = new List<Hotel>();
-            int key = 0;
-            foreach (var item in h.DisplayHeap())
+            Manager manager = null;
+            manager = AuthenticationService.Login(txtUsername.Text, txtPassword.Text);
+            if (manager != null)
             {
-                if (item.City == city && item.Town == town)
-                {
-                    if (key == 0)
-                    {
-                        foreach (char c in item.Town)
-                            key += Convert.ToInt16(c);
-                        foreach (char c in item.City)
-                            key += Convert.ToInt16(c);
-                    }
-                    a.Add(item);
-                }
+                ManagerPanel managerPanel = new ManagerPanel();
+                WindowManager.OpenForm(managerPanel);
             }
-            hashTableChain.AddHotel(key, a);
-            MessageBox.Show(key.ToString());
+        }
+
+        private void btnCustomerLogin_Click(object sender, EventArgs e)
+        {
+            CustomerPanel customerPanel = new CustomerPanel();
+            WindowManager.OpenForm(customerPanel);
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            WindowManager.CloseForm(this);
         }
     }
 }

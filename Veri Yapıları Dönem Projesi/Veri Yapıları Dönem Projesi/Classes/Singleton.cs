@@ -10,9 +10,10 @@ namespace Veri_Yapıları_Dönem_Projesi
     {
         private static Singleton singleton = null;
         public BinaryTree hotels;
+        public List<Manager> managers = new List<Manager>();
         private Singleton()
         {
-           
+
         }
         public static Singleton Instance()
         {
@@ -25,7 +26,8 @@ namespace Veri_Yapıları_Dönem_Projesi
             hotels = new BinaryTree(null);
             TextReader.Path = "\\oteller.txt";
             hotels = TextReader.ReadFile();
-
+            Manager manager = new Manager { Username = "admin", Password = "admin" };           
+            managers.Add(manager);
         }
     }
 }

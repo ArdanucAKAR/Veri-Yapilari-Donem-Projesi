@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Veri_Yapıları_Dönem_Projesi
 {
-    public class Manager : User
+    public interface IStack
     {
-
+        void Push(object item);
+        object Pop();
+        object Peek();
+        bool IsEmpty();
     }
 }
