@@ -19,11 +19,6 @@ namespace Veri_Yapıları_Dönem_Projesi
             WindowManager.OpenForm(this);
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Manager manager = null;

@@ -22,7 +22,7 @@ namespace Veri_Yapıları_Dönem_Projesi
             form.Hide();
             if (openedForms.IsEmpty())
             {
-                DialogResult res = MessageBox.Show("Programı Kapatmak İstiyor Musunuz?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                DialogResult res = MessageBox.Show("Programı Kapatmak İstiyor Musunuz?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (res == DialogResult.OK)
                     Environment.Exit(0);
                 if (res == DialogResult.Cancel)

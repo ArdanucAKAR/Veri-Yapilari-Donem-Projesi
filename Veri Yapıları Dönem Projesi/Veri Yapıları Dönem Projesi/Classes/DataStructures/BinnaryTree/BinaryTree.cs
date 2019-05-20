@@ -168,7 +168,7 @@ namespace Veri_Yapıları_Dönem_Projesi
             }
             return successor;
         }
-        public bool Remove(int deger)
+        public bool Sil(int deger)
         {
             BinaryTreeNode current = root;
             BinaryTreeNode parent = root;

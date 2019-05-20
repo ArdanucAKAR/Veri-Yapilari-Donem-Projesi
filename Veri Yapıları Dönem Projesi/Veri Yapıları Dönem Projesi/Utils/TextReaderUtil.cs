@@ -16,7 +16,7 @@ namespace Veri_Yapıları_Dönem_Projesi
         public static BinaryTree ReadFile()
         {
            string file = Directory.GetParent(Directory.GetParent(Environment.CurrentDirectory).FullName).FullName + Path;
-            return JsonConvert.DeserializeObject<BinaryTree>(File.ReadAllText(file));
+            return JsonConvert.DeserializeObject<BinaryTree>(File.ReadAllText(file, Encoding.GetEncoding("iso-8859-9")));
         }
     }
 }

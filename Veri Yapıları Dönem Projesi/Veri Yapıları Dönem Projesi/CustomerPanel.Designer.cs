@@ -38,6 +38,7 @@
             this.Name = "CustomerPanel";
             this.Text = "CustomerPanel";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CustomerPanel_FormClosing);
+            this.Load += new System.EventHandler(this.CustomerPanel_Load);
             this.ResumeLayout(false);
 
         }

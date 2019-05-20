@@ -22,5 +22,10 @@ namespace Veri_Yapıları_Dönem_Projesi
             e.Cancel = true;
             WindowManager.CloseForm(this);
         }
+
+        private void CustomerPanel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
