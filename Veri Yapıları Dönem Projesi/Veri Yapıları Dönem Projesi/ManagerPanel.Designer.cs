@@ -31,14 +31,13 @@
             this.dgwStaff = new System.Windows.Forms.DataGridView();
             this.tbcManager = new System.Windows.Forms.TabControl();
             this.tabHotels = new System.Windows.Forms.TabPage();
-            this.btnPreOrder = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.btnListStaff = new System.Windows.Forms.Button();
             this.btnCrud = new System.Windows.Forms.Button();
             this.dgwHotels = new System.Windows.Forms.DataGridView();
             this.tabStaff = new System.Windows.Forms.TabPage();
             this.lblHotelName = new System.Windows.Forms.Label();
             this.btnDelStaff = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgwStaff)).BeginInit();
             this.tbcManager.SuspendLayout();
             this.tabHotels.SuspendLayout();
@@ -68,7 +67,6 @@
             // tabHotels
             // 
             this.tabHotels.Controls.Add(this.btnAdd);
-            this.tabHotels.Controls.Add(this.btnPreOrder);
             this.tabHotels.Controls.Add(this.btnListStaff);
             this.tabHotels.Controls.Add(this.btnCrud);
             this.tabHotels.Controls.Add(this.dgwHotels);
@@ -80,15 +78,15 @@
             this.tabHotels.Text = "Oteller";
             this.tabHotels.UseVisualStyleBackColor = true;
             // 
-            // btnPreOrder
+            // btnAdd
             // 
-            this.btnPreOrder.Location = new System.Drawing.Point(831, 319);
-            this.btnPreOrder.Name = "btnPreOrder";
-            this.btnPreOrder.Size = new System.Drawing.Size(75, 23);
-            this.btnPreOrder.TabIndex = 3;
-            this.btnPreOrder.Text = "Preorder";
-            this.btnPreOrder.UseVisualStyleBackColor = true;
-            this.btnPreOrder.Click += new System.EventHandler(this.btnPreOrder_Click);
+            this.btnAdd.Location = new System.Drawing.Point(684, 6);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(299, 79);
+            this.btnAdd.TabIndex = 4;
+            this.btnAdd.Text = "Otel Ekle";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnListStaff
             // 
@@ -153,16 +151,6 @@
             this.btnDelStaff.UseVisualStyleBackColor = true;
             this.btnDelStaff.Click += new System.EventHandler(this.btnDelStaff_Click);
             // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(684, 6);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(299, 79);
-            this.btnAdd.TabIndex = 4;
-            this.btnAdd.Text = "Otel Ekle";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // ManagerPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -194,7 +182,6 @@
         private System.Windows.Forms.Button btnCrud;
         private System.Windows.Forms.Button btnListStaff;
         private System.Windows.Forms.Label lblHotelName;
-        private System.Windows.Forms.Button btnPreOrder;
         private System.Windows.Forms.Button btnAdd;
     }
 }

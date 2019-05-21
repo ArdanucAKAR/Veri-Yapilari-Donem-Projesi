@@ -26,9 +26,8 @@ namespace Veri_Yapıları_Dönem_Projesi
         private void ManagerPanel_Load(object sender, EventArgs e)
         {
 
-            Singleton.Instance().hotels.PreOrder();
-            hotelListBinding = Singleton.Instance().hotels.PrintTree();
-            dgwHotels.DataSource = hotelListBinding;
+            Singleton.Instance().hotels.InOrder();
+            dgwHotels.DataSource = Singleton.Instance().hotels.PrintTree();
             #region Görüntü Ayarları
             dgwHotels.Columns[4].Visible = false;
             dgwHotels.Columns[7].Visible = false;
@@ -48,11 +47,6 @@ namespace Veri_Yapıları_Dönem_Projesi
             e.Cancel = true;
             WindowManager.CloseForm(this);
         }
-
-
-
-
-
 
         private void dgwHotels_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
@@ -79,10 +73,9 @@ namespace Veri_Yapıları_Dönem_Projesi
             if (dgwHotels.SelectedRows.Count > 0)
             {
                 MessageBox.Show(dgwHotels.SelectedRows[0].Cells[0].Value.ToString());
-                Hotel hotel = new Hotel();
-                hotel.Id = Convert.ToInt32(dgwHotels.SelectedRows[0].Cells[0].Value);
-                Singleton.Instance().hotels.Remove(hotel.Id);
-                Singleton.Instance().hotels.nodes.RemoveAt(Singleton.Instance().hotels.PrintTree().Select(T => T.Id).ToList().IndexOf(hotel.Id));
+                Singleton.Instance().hotels.Remove(Convert.ToInt32(dgwHotels.SelectedRows[0].Cells[0].Value));
+                Singleton.Instance().hotels.InOrder();
+                dgwHotels.DataSource = Singleton.Instance().hotels.PrintTree();
             }
 
         }
@@ -99,7 +92,6 @@ namespace Veri_Yapıları_Dönem_Projesi
                 staffs = selectedHotel.Staff;
                 staffListBinding = new BindingList<Staff>(staffs);
                 dgwStaff.DataSource = staffListBinding;
-                Singleton.Instance().hotels.nodes = hotelListBinding;
 
             }
             else
@@ -127,27 +119,9 @@ namespace Veri_Yapıları_Dönem_Projesi
             }
         }
 
-        private void btnPreOrder_Click(object sender, EventArgs e)
-        {
-            if(btnPreOrder.Text == "Preorder")
-            {
-                btnPreOrder.Text = "Postorder";
-                Singleton.Instance().hotels.PreOrder();
-
-            }
-            else
-            {
-                btnPreOrder.Text = "Preorder";
-                Singleton.Instance().hotels.PostOrder();
-            }
-            MessageBox.Show(Singleton.Instance().hotels.NodeCount().ToString() + " sayi: " + Singleton.Instance().hotels.nodes.Count.ToString());
-
-
-        }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            HotelAddingPanel hotelAddingPanel = new HotelAddingPanel();
+            HotelAddingPanel hotelAddingPanel = new HotelAddingPanel(dgwHotels);
             WindowManager.OpenForm(hotelAddingPanel);
         }
     }

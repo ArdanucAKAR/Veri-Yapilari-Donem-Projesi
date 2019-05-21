@@ -12,9 +12,11 @@ namespace Veri_Yapıları_Dönem_Projesi
 {
     public partial class HotelAddingPanel : Form
     {
-        public HotelAddingPanel()
+        DataGridView dgwdgwHotels;
+        public HotelAddingPanel(DataGridView d)
         {
             InitializeComponent();
+            dgwdgwHotels = d;
         }
 
         private void HotelAddingPanel_FormClosing(object sender, FormClosingEventArgs e)
@@ -39,7 +41,8 @@ namespace Veri_Yapıları_Dönem_Projesi
                 NumRooms = int.Parse(txtNumRoom.Text)
             };
             Singleton.Instance().hotels.Add(h);
-            Singleton.Instance().hotels.PreOrder();
+            Singleton.Instance().hotels.InOrder();
+            dgwdgwHotels.DataSource = Singleton.Instance().hotels.PrintTree();
             this.Close();
         }
     }
