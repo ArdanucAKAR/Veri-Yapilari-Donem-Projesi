@@ -38,9 +38,14 @@ namespace Veri_Yapıları_Dönem_Projesi
         {
             Comments = new List<Comment>();
             Staff = new List<Staff>();
-
+            Id = IdGenerator();
         }
-        public void RateTheHotel(int rate)
+        private int IdGenerator()
+        {
+            string number = String.Format("{0:d5}", (DateTime.Now.Ticks / 10) % 100000);
+            return Convert.ToInt32(number);
+        }
+            public void RateTheHotel(int rate)
         {
             Point += rate;
             Raters++;

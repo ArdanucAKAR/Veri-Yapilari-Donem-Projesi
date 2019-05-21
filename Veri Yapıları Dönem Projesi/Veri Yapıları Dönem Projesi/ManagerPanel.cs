@@ -13,44 +13,51 @@ namespace Veri_Yapıları_Dönem_Projesi
     public partial class ManagerPanel : Form
     {
         object ilkveri;
+        Hotel selectedHotel;
+        BindingList<Hotel> hotelListBinding;
+        BindingList<Staff> staffListBinding;
+
         public ManagerPanel()
         {
             InitializeComponent();
-            
+
         }
 
         private void ManagerPanel_Load(object sender, EventArgs e)
         {
+
             Singleton.Instance().hotels.PreOrder();
-            List<Hotel> hotels = new List<Hotel>();
-            hotels = Singleton.Instance().hotels.PrintTree();
-            var listBinding = new BindingList<Hotel>(hotels);
-            
-            dgwHotels.DataSource = listBinding;
+            hotelListBinding = Singleton.Instance().hotels.PrintTree();
+            dgwHotels.DataSource = hotelListBinding;
+            #region Görüntü Ayarları
             dgwHotels.Columns[4].Visible = false;
             dgwHotels.Columns[7].Visible = false;
             dgwHotels.Columns[8].Visible = false;
             dgwHotels.Columns[9].ReadOnly = true;
             dgwHotels.Columns[0].Visible = false;
-            dgwHotels.AllowUserToAddRows = true;
-
+            dgwHotels.AllowUserToAddRows = false;
+            dgwStaff.AllowUserToAddRows = true;
+            dgwStaff.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            (tbcManager.TabPages[1] as TabPage).Enabled = false;
+            #endregion
 
         }
 
         private void ManagerPanel_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel=true;
+            e.Cancel = true;
             WindowManager.CloseForm(this);
         }
 
-       
 
 
-        
+
+
 
         private void dgwHotels_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
-            ilkveri = dgwHotels.SelectedCells[0].Value;
+            if (dgwHotels.SelectedCells.Count > 0)
+                ilkveri = dgwHotels.SelectedCells[0].Value;
         }
 
         private void dgwHotels_CellValueChanged(object sender, DataGridViewCellEventArgs e)
@@ -69,9 +76,80 @@ namespace Veri_Yapıları_Dönem_Projesi
 
         private void btnCrud_Click(object sender, EventArgs e)
         {
-            Singleton.Instance().hotels.Remove(Convert.ToInt32(dgwHotels.SelectedRows[0].Cells[0].Value));
-           
+            if (dgwHotels.SelectedRows.Count > 0)
+            {
+                MessageBox.Show(dgwHotels.SelectedRows[0].Cells[0].Value.ToString());
+                Hotel hotel = new Hotel();
+                hotel.Id = Convert.ToInt32(dgwHotels.SelectedRows[0].Cells[0].Value);
+                Singleton.Instance().hotels.Remove(hotel.Id);
+                Singleton.Instance().hotels.nodes.RemoveAt(Singleton.Instance().hotels.PrintTree().Select(T => T.Id).ToList().IndexOf(hotel.Id));
+            }
+
+        }
+
+        private void btnListStaff_Click(object sender, EventArgs e)
+        {
+            if (dgwHotels.SelectedRows.Count > 0)
+            {
+                selectedHotel = (Singleton.Instance().hotels.Search(Convert.ToInt32(dgwHotels.SelectedRows[0].Cells[0].Value)).data);
+                lblHotelName.Text = selectedHotel.Name + " Otelinin Personelleri";
+                (tbcManager.TabPages[1] as TabPage).Enabled = true;
+                tbcManager.SelectedIndex = 1;
+                List<Staff> staffs = new List<Staff>();
+                staffs = selectedHotel.Staff;
+                staffListBinding = new BindingList<Staff>(staffs);
+                dgwStaff.DataSource = staffListBinding;
+                Singleton.Instance().hotels.nodes = hotelListBinding;
+
+            }
+            else
+            {
+                MessageBox.Show("Lütfen bir otel seçiniz.");
+            }
+        }
+
+        private void tbcManager_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            if (!e.TabPage.Enabled)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void btnDelStaff_Click(object sender, EventArgs e)
+        {
+            if (dgwStaff.SelectedRows.Count > 0)
+            {
+                Staff staff = new Staff();
+                staff.TRId = dgwStaff.SelectedRows[0].Cells[0].Value.ToString();
+                staffListBinding.RemoveAt(selectedHotel.Staff.Select(T => T.TRId).ToList().IndexOf(staff.TRId));
+
+            }
+        }
+
+        private void btnPreOrder_Click(object sender, EventArgs e)
+        {
+            if(btnPreOrder.Text == "Preorder")
+            {
+                btnPreOrder.Text = "Postorder";
+                Singleton.Instance().hotels.PreOrder();
+
+            }
+            else
+            {
+                btnPreOrder.Text = "Preorder";
+                Singleton.Instance().hotels.PostOrder();
+            }
+            MessageBox.Show(Singleton.Instance().hotels.NodeCount().ToString() + " sayi: " + Singleton.Instance().hotels.nodes.Count.ToString());
+
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            HotelAddingPanel hotelAddingPanel = new HotelAddingPanel();
+            WindowManager.OpenForm(hotelAddingPanel);
         }
     }
-    
+
 }

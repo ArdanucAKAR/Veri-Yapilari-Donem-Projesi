@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,10 +10,10 @@ namespace Veri_Yapıları_Dönem_Projesi
     public class BinaryTree
     {
         public BinaryTreeNode root;
-        private List<Hotel> nodes;
+        public BindingList<Hotel> nodes;
         public BinaryTree(BinaryTreeNode _root)
         {
-            nodes = new List<Hotel>();
+            nodes = new BindingList<Hotel>();
             this.root = _root;
         }
        
@@ -47,7 +48,7 @@ namespace Veri_Yapıları_Dönem_Projesi
             }
             return count;
         }
-        public List<Hotel> PrintTree()
+        public BindingList<Hotel> PrintTree()
         {
             return nodes;
         }
@@ -66,6 +67,7 @@ namespace Veri_Yapıları_Dönem_Projesi
         }
         public void InOrder()
         {
+ 
             InOrderInt(root);
         }
         private void InOrderInt(BinaryTreeNode node)
@@ -78,6 +80,7 @@ namespace Veri_Yapıları_Dönem_Projesi
         }
         private void Visit(BinaryTreeNode node)
         {
+            nodes.Remove(node.data);
             nodes.Add(node.data);
         }
         public void PostOrder()
@@ -191,14 +194,14 @@ namespace Veri_Yapıları_Dönem_Projesi
                     return false;
             }
             
-            if (current.left == null && current.left == null)
+            if (current.left == null && current.right == null)
             {
                 if (current == root)
                     root = null;
                 else if (issol)
-                    parent.left.data = null;
+                    parent.left = null;
                 else
-                    parent.right.data = null;
+                    parent.right = null;
             }
             else if (current.right == null)
             {

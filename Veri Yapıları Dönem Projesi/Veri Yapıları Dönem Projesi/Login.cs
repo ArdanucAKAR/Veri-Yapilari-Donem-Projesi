@@ -32,6 +32,8 @@ namespace Veri_Yapıları_Dönem_Projesi
 
         private void btnCustomerLogin_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(Singleton.Instance().hotels.root.left.data.Name);
+
             CustomerPanel customerPanel = new CustomerPanel();
             WindowManager.OpenForm(customerPanel);
         }

@@ -5,29 +5,48 @@
       "Name": "Hotel1",
       "Point": 25,
       "Raters": 3,
-      "Rate" : 7,
-      "City":"Ankara",
-      "Town":"Pornova"
+      "Rate": 7,
+      "City": "Ankara",
+      "Town": "Pornova",
+      "Staff": [
+          {
+            "FullName": "FullName",
+            "TRId": "49522287964",
+            "Department": "Mutfak",
+            "Position": "Aþçý",
+            "Contact": {
+              "Address": "Dünya",
+              "EMail": "atesliturizmci@hotmail.com",
+              "PhoneNumber": "053169316931"
+            }
+          },
+          {
+            "FullName": "FullName",
+            "TRId": "49522287964",
+            "Department": "Mutfak",
+            "Position": "Aþçý"
+          }
+      ]
     },
     "left": {
       "data": {
         "id": 6,
         "Name": "Hotel5",
-	"Point": 21,
+        "Point": 21,
         "Raters": 3,
-        "Rate" : 7,      
-"City":"Ankara",
-      "Town":"Pornova"
+        "Rate": 7,
+        "City": "Ankara",
+        "Town": "Pornova"
       },
       "left": {
         "data": {
           "id": 45,
           "Name": "Hotel7",
-		"Point": 21,
-        "Raters": 3,
-        "Rate" : 7,
-      "City":"Ýzmir",
-      "Town":"Þornova"
+          "Point": 21,
+          "Raters": 3,
+          "Rate": 7,
+          "City": "Ýzmir",
+          "Town": "Þornova"
         },
         "left": null,
         "right": null
@@ -38,21 +57,21 @@
       "data": {
         "id": 12,
         "Name": "Hotel2",
-	"Point": 21,
+        "Point": 21,
         "Raters": 3,
-        "Rate" : 7,
-      "City":"Ýzmir",
-      "Town":"Hornova"
+        "Rate": 7,
+        "City": "Ýzmir",
+        "Town": "Hornova"
       },
       "left": {
         "data": {
           "id": 7,
           "Name": "Hotel4",
-	"Point": 21,
-        "Raters": 3,
-        "Rate" : 7,
-      "City":"Ýzmir",
-      "Town":"Kornova"
+          "Point": 21,
+          "Raters": 3,
+          "Rate": 7,
+          "City": "Ýzmir",
+          "Town": "Kornova"
         },
         "left": null,
         "right": null
@@ -61,11 +80,11 @@
         "data": {
           "id": 1,
           "Name": "Hotel3",
-	"Point": 21,
-        "Raters": 3,
-        "Rate" : 7,
-      "City":"Ýzmir",
-      "Town":"Bornova"
+          "Point": 21,
+          "Raters": 3,
+          "Rate": 7,
+          "City": "Ýzmir",
+          "Town": "Bornova"
         },
         "left": null,
         "right": null
