@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace Veri_Yapıları_Dönem_Projesi
 {
@@ -32,7 +33,10 @@ namespace Veri_Yapıları_Dönem_Projesi
 
         private void btnCustomerLogin_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Singleton.Instance().hotels.root.left.data.Name);
+            
+            string IsimGirisi = Interaction.InputBox("Bilgi Girişi", "Adınızı veSoyadınızı giriniz.", "Örn: Ekrem İmamoğlu ", 0, 0);
+            MessageBox.Show("Girilen isim: " + IsimGirisi);
+            
 
             CustomerPanel customerPanel = new CustomerPanel();
             WindowManager.OpenForm(customerPanel);

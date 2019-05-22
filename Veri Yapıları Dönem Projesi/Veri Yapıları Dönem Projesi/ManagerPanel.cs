@@ -70,8 +70,9 @@ namespace Veri_Yapıları_Dönem_Projesi
         }
         private void btnDelStaff_Click(object sender, EventArgs e)
         {
-            if (dgwStaff.SelectedRows.Count > 0)
-                selectedHotel.Staff.RemoveAt(dgwStaff.CurrentCell.RowIndex);
+           if (dgwStaff.SelectedRows.Count > 0)
+                selectedHotel.Staff.Remove(selectedHotel.Staff.Where(x => x.TRId == dgwStaff.SelectedRows[0].Cells[0].Value.ToString()).ToList()[0]);
+            dgwStaff.DataSource = selectedHotel.Staff;
         }
         #endregion
         #region STAFF SORT
