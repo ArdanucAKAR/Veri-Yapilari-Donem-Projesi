@@ -34,7 +34,7 @@ namespace Veri_Yapıları_Dönem_Projesi
                 Contact = new ContactInformation()
                 {
                     Address = txtAddress.Text,
-                    PhoneNumber = txtPhone.Text,
+                    PhoneNumber = txtPhoneNumber.Text,
                     EMail = txtEmail.Text
                 },
                 Stars = int.Parse(txtStar.Text),
