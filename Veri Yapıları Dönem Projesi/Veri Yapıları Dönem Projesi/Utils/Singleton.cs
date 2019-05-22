@@ -24,7 +24,7 @@ namespace Veri_Yapıları_Dönem_Projesi
         public void Initialize()
         {
             hotels = new BinaryTree(null);
-            //List<Hotel> hotelList = new List<Hotel>();
+            List<Hotel> hotelList = new List<Hotel>();
             //hotelList.Add(new Hotel() { Id = 19, Name = "o" });
             //hotelList.Add(new Hotel() { Id = 2, Name = "a" });
             //hotelList.Add(new Hotel() { Id = 8, Name = "b" });
@@ -32,11 +32,12 @@ namespace Veri_Yapıları_Dönem_Projesi
             //hotelList.Add(new Hotel() { Id = 5, Name = "c" });
             //hotelList.Add(new Hotel() { Id = 15, Name = "d" });
             TextReader.Path = "\\oteller.txt";
-            hotels = TextReader.ReadFile();
-            //foreach (var item in hotelList)
-            //{
-            //    hotels.Add(item);
-            //}
+            hotelList = TextReader.ReadFile();
+            foreach (var item in hotelList)
+            {
+                Console.WriteLine(item.Name);
+                hotels.Add(item);
+            }
             Manager manager = new Manager { Username = "admin", Password = "admin" };           
             managers.Add(manager);
         }

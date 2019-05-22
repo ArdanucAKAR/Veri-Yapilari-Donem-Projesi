@@ -13,10 +13,10 @@ namespace Veri_Yapıları_Dönem_Projesi
         public static String Path { get; set; }
         public static object Data { get; set; }
 
-        public static BinaryTree ReadFile()
+        public static List<Hotel> ReadFile()
         {
            string file = Directory.GetParent(Directory.GetParent(Environment.CurrentDirectory).FullName).FullName + Path;
-            return JsonConvert.DeserializeObject<BinaryTree>(File.ReadAllText(file, Encoding.GetEncoding("iso-8859-9")));
+            return JsonConvert.DeserializeObject<List<Hotel>>(File.ReadAllText(file, Encoding.GetEncoding("iso-8859-9")));
         }
     }
 }
