@@ -6,42 +6,327 @@
     "Town": "Kaþ",
     "NumRooms": 350,
     "Point": 1,
-    "Raters": 7
+    "Raters": 7,
+    "Staff": [
+      {
+        "FullName": "cal1",
+        "TRId": "49522287964",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Contact": {
+          "Address": "Dünya",
+          "EMail": "atesliturizmci@hotmail.com",
+          "PhoneNumber": "053169316931"
+        }
+      },
+      {
+        "FullName": "cal2",
+        "TRId": "49522287964",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Contact": {
+          "Address": "Dünya",
+          "EMail": "atesliturizmci@hotmail.com",
+          "PhoneNumber": "053169316931"
+        }
+      },
+      {
+        "FullName": "cal3",
+        "TRId": "49522287964",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Contact": {
+          "Address": "Dünya",
+          "EMail": "atesliturizmci@hotmail.com",
+          "PhoneNumber": "053169316931"
+        }
+      }
+    ],
+    "Comments": [
+      {
+        "Customer": {},
+        "Content": "güzel bi otel"
+      },
+      {
+        "Customer": {},
+        "Content": "Trivago"
+      },
+      {
+        "Customer": {},
+        "Content": "eh bi otel"
+      },
+      {
+        "Customer": {},
+        "Content": "ne oteli"
+      },
+      {
+        "Customer": {},
+        "Content": "soru neydi ?"
+      }
+    ]
   },
   {
-    "Id": 6,
-    "Name": "Kaþ Otel 6",
+    "Id": 5,
+    "Name": "Kaþ Otel 5",
     "City": "Antalya",
     "Town": "Kaþ",
     "NumRooms": 350,
     "Point": 1,
-    "Raters": 7
+    "Raters": 7,
+    "Staff": [
+      {
+        "FullName": "cal1",
+        "TRId": "49522287964",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Contact": {
+          "Address": "Dünya",
+          "EMail": "atesliturizmci@hotmail.com",
+          "PhoneNumber": "053169316931"
+        }
+      },
+      {
+        "FullName": "cal2",
+        "TRId": "49522287964",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Contact": {
+          "Address": "Dünya",
+          "EMail": "atesliturizmci@hotmail.com",
+          "PhoneNumber": "053169316931"
+        }
+      },
+      {
+        "FullName": "cal3",
+        "TRId": "49522287964",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Contact": {
+          "Address": "Dünya",
+          "EMail": "atesliturizmci@hotmail.com",
+          "PhoneNumber": "053169316931"
+        }
+      }
+    ],
+    "Comments": [
+      {
+        "Customer": {},
+        "Content": "güzel bi otel"
+      },
+      {
+        "Customer": {},
+        "Content": "Trivago"
+      },
+      {
+        "Customer": {},
+        "Content": "eh bi otel"
+      },
+      {
+        "Customer": {},
+        "Content": "ne oteli"
+      },
+      {
+        "Customer": {},
+        "Content": "soru neydi ?"
+      }
+    ]
   },
   {
-    "Id": 2,
-    "Name": "Kaþ Otel 2",
+    "Id": 7,
+    "Name": "Kaþ Otel 7",
     "City": "Antalya",
     "Town": "Kaþ",
     "NumRooms": 350,
     "Point": 1,
-    "Raters": 7
+    "Raters": 7,
+    "Staff": [
+      {
+        "FullName": "cal1",
+        "TRId": "49522287964",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Contact": {
+          "Address": "Dünya",
+          "EMail": "atesliturizmci@hotmail.com",
+          "PhoneNumber": "053169316931"
+        }
+      },
+      {
+        "FullName": "cal2",
+        "TRId": "49522287964",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Contact": {
+          "Address": "Dünya",
+          "EMail": "atesliturizmci@hotmail.com",
+          "PhoneNumber": "053169316931"
+        }
+      },
+      {
+        "FullName": "cal3",
+        "TRId": "49522287964",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Contact": {
+          "Address": "Dünya",
+          "EMail": "atesliturizmci@hotmail.com",
+          "PhoneNumber": "053169316931"
+        }
+      }
+    ],
+    "Comments": [
+      {
+        "Customer": {},
+        "Content": "güzel bi otel"
+      },
+      {
+        "Customer": {},
+        "Content": "Trivago"
+      },
+      {
+        "Customer": {},
+        "Content": "eh bi otel"
+      },
+      {
+        "Customer": {},
+        "Content": "ne oteli"
+      },
+      {
+        "Customer": {},
+        "Content": "soru neydi ?"
+      }
+    ]
   },
   {
-    "Id": 11,
-    "Name": "Kaþ Otel 11",
+    "Id": 9,
+    "Name": "Kaþ Otel 9",
     "City": "Antalya",
     "Town": "Kaþ",
     "NumRooms": 350,
     "Point": 1,
-    "Raters": 7
+    "Raters": 7,
+    "Staff": [
+      {
+        "FullName": "cal1",
+        "TRId": "49522287964",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Contact": {
+          "Address": "Dünya",
+          "EMail": "atesliturizmci@hotmail.com",
+          "PhoneNumber": "053169316931"
+        }
+      },
+      {
+        "FullName": "cal2",
+        "TRId": "49522287964",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Contact": {
+          "Address": "Dünya",
+          "EMail": "atesliturizmci@hotmail.com",
+          "PhoneNumber": "053169316931"
+        }
+      },
+      {
+        "FullName": "cal3",
+        "TRId": "49522287964",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Contact": {
+          "Address": "Dünya",
+          "EMail": "atesliturizmci@hotmail.com",
+          "PhoneNumber": "053169316931"
+        }
+      }
+    ],
+    "Comments": [
+      {
+        "Customer": {},
+        "Content": "güzel bi otel"
+      },
+      {
+        "Customer": {},
+        "Content": "Trivago"
+      },
+      {
+        "Customer": {},
+        "Content": "eh bi otel"
+      },
+      {
+        "Customer": {},
+        "Content": "ne oteli"
+      },
+      {
+        "Customer": {},
+        "Content": "soru neydi ?"
+      }
+    ]
   },
   {
     "Id": 12,
-    "Name": "Ardanuç Otel 12",
+    "Name": "Kaþ Otel 12",
     "City": "Antalya",
     "Town": "Kaþ",
     "NumRooms": 350,
     "Point": 1,
-    "Raters": 7
+    "Raters": 7,
+    "Staff": [
+      {
+        "FullName": "cal1",
+        "TRId": "49522287964",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Contact": {
+          "Address": "Dünya",
+          "EMail": "atesliturizmci@hotmail.com",
+          "PhoneNumber": "053169316931"
+        }
+      },
+      {
+        "FullName": "cal2",
+        "TRId": "49522287964",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Contact": {
+          "Address": "Dünya",
+          "EMail": "atesliturizmci@hotmail.com",
+          "PhoneNumber": "053169316931"
+        }
+      },
+      {
+        "FullName": "cal3",
+        "TRId": "49522287964",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Contact": {
+          "Address": "Dünya",
+          "EMail": "atesliturizmci@hotmail.com",
+          "PhoneNumber": "053169316931"
+        }
+      }
+    ],
+    "Comments": [
+      {
+        "Customer": {},
+        "Content": "güzel bi otel"
+      },
+      {
+        "Customer": {},
+        "Content": "Trivago"
+      },
+      {
+        "Customer": {},
+        "Content": "eh bi otel"
+      },
+      {
+        "Customer": {},
+        "Content": "ne oteli"
+      },
+      {
+        "Customer": {},
+        "Content": "soru neydi ?"
+      }
+    ]
   }
 ]

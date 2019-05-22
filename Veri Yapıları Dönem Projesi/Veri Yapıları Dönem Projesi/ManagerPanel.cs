@@ -14,8 +14,6 @@ namespace Veri_Yapıları_Dönem_Projesi
     {
         object ilkveri;
         Hotel selectedHotel;
-        BindingList<Hotel> hotelListBinding;
-        BindingList<Staff> staffListBinding;
 
         public ManagerPanel()
         {
@@ -35,7 +33,7 @@ namespace Veri_Yapıları_Dönem_Projesi
             dgwHotels.Columns[9].ReadOnly = true;
             dgwHotels.Columns[0].Visible = false;
             dgwHotels.AllowUserToAddRows = false;
-            dgwStaff.AllowUserToAddRows = true;
+            dgwStaff.AllowUserToAddRows = false;
             dgwStaff.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
             (tbcManager.TabPages[1] as TabPage).Enabled = false;
             #endregion
@@ -72,7 +70,6 @@ namespace Veri_Yapıları_Dönem_Projesi
         {
             if (dgwHotels.SelectedRows.Count > 0)
             {
-                MessageBox.Show(dgwHotels.SelectedRows[0].Cells[0].Value.ToString());
                 Singleton.Instance().hotels.Remove(Convert.ToInt32(dgwHotels.SelectedRows[0].Cells[0].Value));
                 Singleton.Instance().hotels.InOrder();
                 dgwHotels.DataSource = Singleton.Instance().hotels.PrintTree();
@@ -84,15 +81,13 @@ namespace Veri_Yapıları_Dönem_Projesi
         {
             if (dgwHotels.SelectedRows.Count > 0)
             {
-                selectedHotel = (Singleton.Instance().hotels.Search(Convert.ToInt32(dgwHotels.SelectedRows[0].Cells[0].Value)).data);
+                selectedHotel = Singleton.Instance().hotels.nodes[dgwHotels.CurrentCell.RowIndex];
+                #region Görüntü
                 lblHotelName.Text = selectedHotel.Name + " Otelinin Personelleri";
                 (tbcManager.TabPages[1] as TabPage).Enabled = true;
                 tbcManager.SelectedIndex = 1;
-                List<Staff> staffs = new List<Staff>();
-                staffs = selectedHotel.Staff;
-                staffListBinding = new BindingList<Staff>(staffs);
-                dgwStaff.DataSource = staffListBinding;
-
+                #endregion
+                dgwStaff.DataSource = selectedHotel.Staff;
             }
             else
             {
@@ -112,10 +107,7 @@ namespace Veri_Yapıları_Dönem_Projesi
         {
             if (dgwStaff.SelectedRows.Count > 0)
             {
-                Staff staff = new Staff();
-                staff.TRId = dgwStaff.SelectedRows[0].Cells[0].Value.ToString();
-                staffListBinding.RemoveAt(selectedHotel.Staff.Select(T => T.TRId).ToList().IndexOf(staff.TRId));
-
+                selectedHotel.Staff.RemoveAt(dgwStaff.CurrentCell.RowIndex);
             }
         }
 

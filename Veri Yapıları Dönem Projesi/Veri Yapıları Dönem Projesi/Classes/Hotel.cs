@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,13 +32,20 @@ namespace Veri_Yapıları_Dönem_Projesi
             }
         }
 
-        public List<Comment> Comments { get; set; }
-        public List<Staff> Staff { get; set; }
+        public BindingList<Comment> Comments { get; set; }
+        public BindingList<Staff> Staff { get; set; }
+        LinkedList LinkedList { get; set; }
 
         public Hotel()
         {
-            Comments = new List<Comment>();
-            Staff = new List<Staff>();
+            //LinkedList = new LinkedList();
+            //foreach (var item in Staff)
+            //{
+            //    LinkedList.InsertLast(item);
+            //}
+            
+            Comments = new BindingList<Comment>();
+            Staff = new BindingList<Staff>();
             Id = IdGenerator();
         }
         private int IdGenerator()
