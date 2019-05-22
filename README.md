@@ -1,5 +1,7 @@
 
-![](https://lh3.googleusercontent.com/dVfLuPxUi3fBkx5szWoz1ZHyB4AiBoPKgexN2d_aeYBReeqwQXpExbJcDXgbtsZWt62xOJaQWmPMZrjGJex-p2MK9yPQ2wiF-JTGLztYP_h-R7N0j15QdDTuIObo6ZpzwlrZR8vD)
+<p align="center">
+  <img src="https://lh3.googleusercontent.com/dVfLuPxUi3fBkx5szWoz1ZHyB4AiBoPKgexN2d_aeYBReeqwQXpExbJcDXgbtsZWt62xOJaQWmPMZrjGJex-p2MK9yPQ2wiF-JTGLztYP_h-R7N0j15QdDTuIObo6ZpzwlrZR8vD">
+</p>
 
 Veri Yapıları - Hotels Assemble
 
