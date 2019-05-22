@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace Veri_Yapıları_Dönem_Projesi
 {
@@ -51,16 +52,32 @@ namespace Veri_Yapıları_Dönem_Projesi
             gbStaff.Visible = false;
             gbHotels.Visible = true;
         }
-        private void btnListStaff_Click(object sender, EventArgs e)
+        private void btnAddRate_Click(object sender, EventArgs e)
         {
-            if (dgwHotels.SelectedRows.Count > 0)
+            if (dgwStaff.SelectedRows.Count > 0)
             {
-                selectedHotel = Singleton.Instance().hotels.nodes[dgwHotels.CurrentCell.RowIndex];
-                gbStaff.Text = selectedHotel.Name + " Otelinin Personelleri";
-                dgwStaff.DataSource = selectedHotel.Staff;
+                int rate = Convert.ToInt32(Interaction.InputBox("Puan Girişi", "Personele Verdiğiniz Puan", "Örn: 1-10", 0, 0));
+                if (rate < 1 || rate > 10)
+                    MessageBox.Show("Hatalı Değer Girdiniz");
+                else
+                {
+                    selectedHotel.Staff.Where(x => x.TRId == dgwStaff.SelectedRows[0].Cells[0].Value.ToString()).ToList()[0].Rate += rate;
+                    dgwStaff.Update();
+                    dgwStaff.Refresh();
+                    dgwStaff.DataSource = selectedHotel.Staff;
+                }
             }
             else
-                MessageBox.Show("Lütfen bir otel seçiniz.");
+                MessageBox.Show("Personel Seçiniz");
+        }
+        private void btnListStaffForDeparmant_Click(object sender, EventArgs e)
+        {
+            string department = Interaction.InputBox("Departman Bilgisi", "Departman İsmi Giriniz", "Örn:Mutfak", 0, 0);
+            List<Staff> filterStaff = Singleton.Instance().hotels.PrintTree().Where(x => x.Id == selectedHotel.Id).ToList()[0].Staff.Where(x => x.Department == department).ToList();
+            if (filterStaff.Count != 0)
+                dgwStaff.DataSource = filterStaff;
+            else
+                MessageBox.Show("Bu Departmanda Çalışan Yoktur");
         }
         #region STAFF CRUD
         private void btnAddStaff_Click(object sender, EventArgs e)
@@ -70,13 +87,12 @@ namespace Veri_Yapıları_Dönem_Projesi
         }
         private void btnDelStaff_Click(object sender, EventArgs e)
         {
-           if (dgwStaff.SelectedRows.Count > 0)
+            if (dgwStaff.SelectedRows.Count > 0)
                 selectedHotel.Staff.Remove(selectedHotel.Staff.Where(x => x.TRId == dgwStaff.SelectedRows[0].Cells[0].Value.ToString()).ToList()[0]);
             dgwStaff.DataSource = selectedHotel.Staff;
         }
         #endregion
-        #region STAFF SORT
-        #region RATE
+        #region STAFF SORT  
         private void btnStaffSortRate_Click(object sender, EventArgs e)
         {
             selectedHotel = Singleton.Instance().hotels.nodes[dgwHotels.CurrentCell.RowIndex];
@@ -87,19 +103,6 @@ namespace Veri_Yapıları_Dönem_Projesi
             selectedHotel = Singleton.Instance().hotels.nodes[dgwHotels.CurrentCell.RowIndex];
             dgwStaff.DataSource = selectedHotel.Staff.OrderByDescending(x => x.Rate).ToList();
         }
-        #endregion
-        #region DEPARTMENT
-        private void btnStaffSortDescDepartment_Click(object sender, EventArgs e)
-        {
-            selectedHotel = Singleton.Instance().hotels.nodes[dgwHotels.CurrentCell.RowIndex];
-            dgwStaff.DataSource = selectedHotel.Staff.OrderBy(x => x.Department).ToList();
-        }
-        private void btnStaffSortDepartment_Click(object sender, EventArgs e)
-        {
-            selectedHotel = Singleton.Instance().hotels.nodes[dgwHotels.CurrentCell.RowIndex];
-            dgwStaff.DataSource = selectedHotel.Staff.OrderByDescending(x => x.Department).ToList();
-        }
-        #endregion
         #endregion
         #endregion
 
@@ -124,6 +127,7 @@ namespace Veri_Yapıları_Dönem_Projesi
                 gbStaff.Text = selectedHotel.Name + " Otelinin Personelleri";
                 #endregion
                 dgwStaff.DataSource = selectedHotel.Staff;
+                dgwStaff.Columns[5].ReadOnly = true;
                 gbHotels.Visible = false;
                 gbStaff.Visible = true;
             }
@@ -145,6 +149,7 @@ namespace Veri_Yapıları_Dönem_Projesi
                 dgwHotels.DataSource = Singleton.Instance().hotels.PrintTree();
             }
         }
+
         #endregion
 
         #endregion

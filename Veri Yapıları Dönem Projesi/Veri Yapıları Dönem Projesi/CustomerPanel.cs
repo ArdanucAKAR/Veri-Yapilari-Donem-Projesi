@@ -49,10 +49,7 @@ namespace Veri_Yapıları_Dönem_Projesi
             {//11an 12iz //11
                 Singleton.Instance().hashMapChain.AddHotel(cityTownInfo[0] + cityTownInfo[1], item);
             }
-
-
-            dgwHotels.DataSource = Singleton.Instance().hashMapChain.GetHotels(cityTownInfo[0] + cityTownInfo[1]).DisplayHeap();
-
+            dgwHotels.DataSource = Singleton.Instance().hashMapChain.GetHotels(cityTownInfo[0] + cityTownInfo[1]).DisplayHeap().OrderBy(x => x.Stars).ToList();
         }
 
         private void btnAddComment_Click(object sender, EventArgs e)
@@ -62,7 +59,7 @@ namespace Veri_Yapıları_Dönem_Projesi
             currentHotel.Comments.Add(new Comment()
             {
                 Content = commentContent,
-                Customer = activeCustomer 
+                Customer = activeCustomer
             });
         }
 
@@ -87,6 +84,18 @@ namespace Veri_Yapıları_Dönem_Projesi
             dgwHotels.Update();
             dgwHotels.Refresh();
             dgwHotels.DataSource = Singleton.Instance().hotels.PrintTree();
+        }
+
+        private void btnListHotelOrderByStar_Click(object sender, EventArgs e)
+        {
+            int stars = Convert.ToInt32(Interaction.InputBox("Yıldız", "Yıldız Sayısı Giriniz", "Örn: 1-5", 0, 0));
+            if (stars < 1 || stars > 5)
+                MessageBox.Show("Hatalı Değer Girdiniz");
+            else
+            {
+                BindingList<Hotel> hotels = (BindingList<Hotel>)dgwHotels.DataSource;
+                dgwHotels.DataSource = hotels.Where(x => x.Stars == stars).OrderBy(x => x.Stars).ToList();
+            }
         }
     }
 }

@@ -77,8 +77,8 @@
     <Compile Include="StaffAddingPanel.Designer.cs">
       <DependentUpon>StaffAddingPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataStructures\BinnaryTree\BinaryTree.cs" />
-    <Compile Include="DataStructures\BinnaryTree\BinaryTreeNode.cs" />
+    <Compile Include="DataStructures\BinaryTree\BinaryTree.cs" />
+    <Compile Include="DataStructures\BinaryTree\BinaryTreeNode.cs" />
     <Compile Include="Classes\Comment.cs" />
     <Compile Include="Classes\User\ContactInformation.cs" />
     <Compile Include="Classes\User\Customer.cs" />

@@ -43,9 +43,8 @@
             this.btnStaffSortRate = new System.Windows.Forms.Button();
             this.btnBackHotels = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.gbDepartmentSort = new System.Windows.Forms.GroupBox();
-            this.btnStaffSortDepartment = new System.Windows.Forms.Button();
-            this.btnStaffSortDescDepartment = new System.Windows.Forms.Button();
+            this.btnListStaffForDeparmant = new System.Windows.Forms.Button();
+            this.btnAddRate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgwStaff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwHotels)).BeginInit();
             this.gbHotels.SuspendLayout();
@@ -53,7 +52,6 @@
             this.gbStaff.SuspendLayout();
             this.gbRateSort.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.gbDepartmentSort.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgwStaff
@@ -98,9 +96,9 @@
             // 
             // btnDelStaff
             // 
-            this.btnDelStaff.Location = new System.Drawing.Point(6, 46);
+            this.btnDelStaff.Location = new System.Drawing.Point(95, 20);
             this.btnDelStaff.Name = "btnDelStaff";
-            this.btnDelStaff.Size = new System.Drawing.Size(160, 23);
+            this.btnDelStaff.Size = new System.Drawing.Size(96, 23);
             this.btnDelStaff.TabIndex = 1;
             this.btnDelStaff.Text = "Personel Sil";
             this.btnDelStaff.UseVisualStyleBackColor = true;
@@ -110,7 +108,7 @@
             // 
             this.btnAddPersonel.Location = new System.Drawing.Point(6, 19);
             this.btnAddPersonel.Name = "btnAddPersonel";
-            this.btnAddPersonel.Size = new System.Drawing.Size(160, 23);
+            this.btnAddPersonel.Size = new System.Drawing.Size(83, 23);
             this.btnAddPersonel.TabIndex = 1;
             this.btnAddPersonel.Text = "Personel Ekle";
             this.btnAddPersonel.UseVisualStyleBackColor = true;
@@ -151,7 +149,6 @@
             // 
             // gbStaff
             // 
-            this.gbStaff.Controls.Add(this.gbDepartmentSort);
             this.gbStaff.Controls.Add(this.gbRateSort);
             this.gbStaff.Controls.Add(this.btnBackHotels);
             this.gbStaff.Controls.Add(this.groupBox4);
@@ -197,45 +194,36 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.btnAddRate);
+            this.groupBox4.Controls.Add(this.btnListStaffForDeparmant);
             this.groupBox4.Controls.Add(this.btnDelStaff);
             this.groupBox4.Controls.Add(this.btnAddPersonel);
             this.groupBox4.Location = new System.Drawing.Point(7, 300);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(172, 78);
+            this.groupBox4.Size = new System.Drawing.Size(301, 79);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Personel İşlemleri";
             // 
-            // gbDepartmentSort
+            // btnListStaffForDeparmant
             // 
-            this.gbDepartmentSort.Controls.Add(this.btnStaffSortDepartment);
-            this.gbDepartmentSort.Controls.Add(this.btnStaffSortDescDepartment);
-            this.gbDepartmentSort.Location = new System.Drawing.Point(319, 301);
-            this.gbDepartmentSort.Name = "gbDepartmentSort";
-            this.gbDepartmentSort.Size = new System.Drawing.Size(172, 78);
-            this.gbDepartmentSort.TabIndex = 5;
-            this.gbDepartmentSort.TabStop = false;
-            this.gbDepartmentSort.Text = "Departmana Göre Sırala";
+            this.btnListStaffForDeparmant.Location = new System.Drawing.Point(6, 50);
+            this.btnListStaffForDeparmant.Name = "btnListStaffForDeparmant";
+            this.btnListStaffForDeparmant.Size = new System.Drawing.Size(287, 23);
+            this.btnListStaffForDeparmant.TabIndex = 1;
+            this.btnListStaffForDeparmant.Text = "Departmana Göre Listele";
+            this.btnListStaffForDeparmant.UseVisualStyleBackColor = true;
+            this.btnListStaffForDeparmant.Click += new System.EventHandler(this.btnListStaffForDeparmant_Click);
             // 
-            // btnStaffSortDepartment
+            // btnAddRate
             // 
-            this.btnStaffSortDepartment.Location = new System.Drawing.Point(6, 46);
-            this.btnStaffSortDepartment.Name = "btnStaffSortDepartment";
-            this.btnStaffSortDepartment.Size = new System.Drawing.Size(160, 23);
-            this.btnStaffSortDepartment.TabIndex = 2;
-            this.btnStaffSortDepartment.Text = "Artan";
-            this.btnStaffSortDepartment.UseVisualStyleBackColor = true;
-            this.btnStaffSortDepartment.Click += new System.EventHandler(this.btnStaffSortDepartment_Click);
-            // 
-            // btnStaffSortDescDepartment
-            // 
-            this.btnStaffSortDescDepartment.Location = new System.Drawing.Point(6, 19);
-            this.btnStaffSortDescDepartment.Name = "btnStaffSortDescDepartment";
-            this.btnStaffSortDescDepartment.Size = new System.Drawing.Size(160, 23);
-            this.btnStaffSortDescDepartment.TabIndex = 1;
-            this.btnStaffSortDescDepartment.Text = "Azalan";
-            this.btnStaffSortDescDepartment.UseVisualStyleBackColor = true;
-            this.btnStaffSortDescDepartment.Click += new System.EventHandler(this.btnStaffSortDescDepartment_Click);
+            this.btnAddRate.Location = new System.Drawing.Point(197, 21);
+            this.btnAddRate.Name = "btnAddRate";
+            this.btnAddRate.Size = new System.Drawing.Size(96, 23);
+            this.btnAddRate.TabIndex = 2;
+            this.btnAddRate.Text = "Puan Ver";
+            this.btnAddRate.UseVisualStyleBackColor = true;
+            this.btnAddRate.Click += new System.EventHandler(this.btnAddRate_Click);
             // 
             // ManagerPanel
             // 
@@ -257,7 +245,6 @@
             this.gbStaff.ResumeLayout(false);
             this.gbRateSort.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
-            this.gbDepartmentSort.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -278,8 +265,7 @@
         private System.Windows.Forms.Button btnBackHotels;
         private System.Windows.Forms.GroupBox gbRateSort;
         private System.Windows.Forms.Button btnStaffSortRate;
-        private System.Windows.Forms.GroupBox gbDepartmentSort;
-        private System.Windows.Forms.Button btnStaffSortDepartment;
-        private System.Windows.Forms.Button btnStaffSortDescDepartment;
+        private System.Windows.Forms.Button btnListStaffForDeparmant;
+        private System.Windows.Forms.Button btnAddRate;
     }
 }
