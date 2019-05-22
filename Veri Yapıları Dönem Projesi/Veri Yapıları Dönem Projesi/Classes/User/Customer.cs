@@ -8,5 +8,6 @@ namespace Veri_Yapıları_Dönem_Projesi
 {
     public class Customer
     {
+        public string Fullname { get; set; }
     }
 }

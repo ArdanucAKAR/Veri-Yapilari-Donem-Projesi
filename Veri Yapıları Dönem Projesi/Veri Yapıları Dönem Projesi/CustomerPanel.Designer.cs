@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.dgwHotels = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAddComment = new System.Windows.Forms.Button();
+            this.btnRateHotel = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgwHotels)).BeginInit();
@@ -46,30 +46,33 @@
             this.dgwHotels.ReadOnly = true;
             this.dgwHotels.Size = new System.Drawing.Size(776, 248);
             this.dgwHotels.TabIndex = 0;
+            this.dgwHotels.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwHotels_CellDoubleClick);
             // 
-            // button1
+            // btnAddComment
             // 
-            this.button1.Location = new System.Drawing.Point(187, 320);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAddComment.Location = new System.Drawing.Point(187, 320);
+            this.btnAddComment.Name = "btnAddComment";
+            this.btnAddComment.Size = new System.Drawing.Size(75, 23);
+            this.btnAddComment.TabIndex = 1;
+            this.btnAddComment.Text = "Yorum Ekle";
+            this.btnAddComment.UseVisualStyleBackColor = true;
+            this.btnAddComment.Click += new System.EventHandler(this.btnAddComment_Click);
             // 
-            // button2
+            // btnRateHotel
             // 
-            this.button2.Location = new System.Drawing.Point(297, 320);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRateHotel.Location = new System.Drawing.Point(297, 320);
+            this.btnRateHotel.Name = "btnRateHotel";
+            this.btnRateHotel.Size = new System.Drawing.Size(75, 23);
+            this.btnRateHotel.TabIndex = 2;
+            this.btnRateHotel.Text = "Puan Ver";
+            this.btnRateHotel.UseVisualStyleBackColor = true;
+            this.btnRateHotel.Click += new System.EventHandler(this.btnRateHotel_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(70, 320);
-            this.button3.Name = "btnsortByCityTown";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Location = new System.Drawing.Point(12, 320);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(142, 23);
             this.button3.TabIndex = 3;
             this.button3.Text = "İl-İlçeye Göre Sırala";
             this.button3.UseVisualStyleBackColor = true;
@@ -91,8 +94,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRateHotel);
+            this.Controls.Add(this.btnAddComment);
             this.Controls.Add(this.dgwHotels);
             this.Name = "CustomerPanel";
             this.Text = "CustomerPanel";
@@ -106,8 +109,8 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgwHotels;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAddComment;
+        private System.Windows.Forms.Button btnRateHotel;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
     }

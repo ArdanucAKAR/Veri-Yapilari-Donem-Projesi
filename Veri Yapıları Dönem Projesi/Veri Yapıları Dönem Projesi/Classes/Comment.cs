@@ -10,5 +10,10 @@ namespace Veri_Yapıları_Dönem_Projesi
     {
         public Customer Customer { get; set; }
         public string Content { get; set; }
+        public override string ToString()
+        {
+            return Customer.Fullname + ": \n" + Content;
+        }
     }
+
 }

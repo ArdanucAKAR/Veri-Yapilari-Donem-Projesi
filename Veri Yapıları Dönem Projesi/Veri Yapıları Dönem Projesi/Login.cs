@@ -34,11 +34,10 @@ namespace Veri_Yapıları_Dönem_Projesi
         private void btnCustomerLogin_Click(object sender, EventArgs e)
         {
             
-            string IsimGirisi = Interaction.InputBox("Bilgi Girişi", "Adınızı veSoyadınızı giriniz.", "Örn: Ekrem İmamoğlu ", 0, 0);
-            MessageBox.Show("Girilen isim: " + IsimGirisi);
+            string FullName = Interaction.InputBox("Bilgi Girişi", "Adınızı veSoyadınızı giriniz.", "Örn: Ekrem İmamoğlu ", 0, 0);
             
 
-            CustomerPanel customerPanel = new CustomerPanel();
+            CustomerPanel customerPanel = new CustomerPanel(FullName);
             WindowManager.OpenForm(customerPanel);
         }
 

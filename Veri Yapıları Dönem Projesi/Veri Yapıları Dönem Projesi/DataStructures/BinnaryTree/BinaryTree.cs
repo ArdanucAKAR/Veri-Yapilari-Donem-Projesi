@@ -50,12 +50,6 @@ namespace Veri_Yapıları_Dönem_Projesi
         }
         public BindingList<Hotel> PrintTree()
         {
-            foreach (var item in nodes)
-            {
-                Console.WriteLine(item.Name + '\n');
-
-            }
-            Console.WriteLine("-------------------------------\n");
             return nodes;
         }
         //Gezinme İşlemleri

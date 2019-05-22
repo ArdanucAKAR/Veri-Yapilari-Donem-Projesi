@@ -13,9 +13,13 @@ namespace Veri_Yapıları_Dönem_Projesi
 {
     public partial class CustomerPanel : Form
     {
-        public CustomerPanel()
+        Hotel currentHotel;
+        Customer activeCustomer;
+        public CustomerPanel(string _FullName)
         {
             InitializeComponent();
+            activeCustomer = new Customer();
+            activeCustomer.Fullname = _FullName;
         }
 
         private void CustomerPanel_FormClosing(object sender, FormClosingEventArgs e)
@@ -32,16 +36,57 @@ namespace Veri_Yapıları_Dönem_Projesi
             dgwHotels.Columns[7].Visible = false;
             dgwHotels.Columns[8].Visible = false;
             dgwHotels.Columns[0].Visible = false;
-            
-           
+
+
         }
 
         private void btnsortByCityTown_Click(object sender, EventArgs e)
         {
             string[] cityTownInfo = Interaction.InputBox("İl İlçe Girişi", "İli ve İlçeyi Giriniz.", "Örn:İzmir Bornova", 0, 0).Split(' ');
-            MessageBox.Show(cityTownInfo[0]+ cityTownInfo[1]);
-            //dgwHotels.DataSource = Singleton.Instance().hotels.PrintTree().Where(x => x.City == cityTownInfo[0] && x.Town == cityTownInfo[1]).ToList();
-           
+            MessageBox.Show(cityTownInfo[0] + cityTownInfo[1]);
+
+            foreach (var item in Singleton.Instance().hotels.PrintTree().Where(x => x.City == cityTownInfo[0] && x.Town == cityTownInfo[1]).ToList())
+            {//11an 12iz //11
+                Singleton.Instance().hashMapChain.AddHotel(cityTownInfo[0] + cityTownInfo[1], item);
+            }
+
+
+            dgwHotels.DataSource = Singleton.Instance().hashMapChain.GetHotels(cityTownInfo[0] + cityTownInfo[1]).DisplayHeap();
+
+        }
+
+        private void btnAddComment_Click(object sender, EventArgs e)
+        {
+            string commentContent = Interaction.InputBox("Yorum Girişi", "Lütfen Yorum Yapınız.", "", 0, 0);
+            currentHotel = Singleton.Instance().hotels.PrintTree().Where(x => x.Id == Convert.ToInt32(dgwHotels.SelectedRows[0].Cells[0].Value)).ToList()[0];
+            currentHotel.Comments.Add(new Comment()
+            {
+                Content = commentContent,
+                Customer = activeCustomer 
+            });
+        }
+
+        private void dgwHotels_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgwHotels.SelectedRows.Count > 0)
+            {
+                string Comments = "";
+                foreach (var item in Singleton.Instance().hotels.PrintTree().Where(x => x.Id == Convert.ToInt32(dgwHotels.SelectedRows[0].Cells[0].Value)).ToList()[0].Comments)
+                {
+                    Comments += item.ToString() + "\n-------\n";
+                }
+                MessageBox.Show(Comments);
+
+            }
+        }
+
+        private void btnRateHotel_Click(object sender, EventArgs e)
+        {
+            string Rate = Interaction.InputBox("Puan Girişi", "Lütfen Puan Veriniz.", "", 0, 0);
+            Singleton.Instance().hotels.PrintTree().Where(x => x.Id == Convert.ToInt32(dgwHotels.SelectedRows[0].Cells[0].Value)).ToList()[0].RateTheHotel(int.Parse(Rate));
+            dgwHotels.Update();
+            dgwHotels.Refresh();
+            dgwHotels.DataSource = Singleton.Instance().hotels.PrintTree();
         }
     }
 }

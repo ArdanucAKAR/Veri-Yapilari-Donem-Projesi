@@ -8,8 +8,9 @@ namespace Veri_Yapıları_Dönem_Projesi
 {
     public class HashMapChain
     {
+        public List<Heap> heaps = new List<Heap>();
         int TABLE_SIZE = 200;
-
+        
         LinkedHashEntry[] table;
 
         public HashMapChain()
@@ -18,39 +19,38 @@ namespace Veri_Yapıları_Dönem_Projesi
             for (int i = 0; i < TABLE_SIZE; i++)
                 table[i] = null;
         }
-
-        public void AddHotel(int key, object value)
+        public void AddHotel(string Stringkey, object value)
         {
+            int key = Stringkey.Length;
             int hash = (key % TABLE_SIZE);
             if (table[hash] == null)
+            {
                 table[hash] = new LinkedHashEntry(key, value);
+                Heap heap = new Heap(10) { hashMap = hash };
+                heap.Insert((Hotel)value);
+                heaps.Add(heap);
+            }
             else
             {
                 LinkedHashEntry entry = table[hash];
                 while (entry.Next != null && entry.Anahtar != key)
                     entry = entry.Next;
-                if (entry.Anahtar == key)
+                if (entry.Anahtar == key) { 
                     entry.Deger = value;
+                    heaps.Where(x => x.hashMap == hash).ToList()[0].Insert((Hotel)value);
+                }
                 else
+                {
                     entry.Next = new LinkedHashEntry(key, value);
+                }
             }
         }
 
-        public Hotel GetHotel(int key)
+        public Heap GetHotels(string Stringkey)
         {
+            int key = Stringkey.Length;
             int hash = (key % TABLE_SIZE);
-            if (table[hash] == null)
-                return null;
-            else
-            {
-                LinkedHashEntry entry = table[hash];
-                while (entry != null && entry.Anahtar != key)
-                    entry = entry.Next;
-                if (entry == null)
-                    return null;
-                else
-                    return (Hotel)entry.Deger;
-            }
+            return heaps.Where(x => x.hashMap == hash).ToList()[0];
         }
     }
 }

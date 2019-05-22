@@ -5,12 +5,13 @@
     "City": "Antalya",
     "Town": "Kaþ",
     "NumRooms": 350,
-    "Point": 1,
-    "Raters": 7,
+    "Point": 7,
+    "Raters": 1,
+    "Rate":1,
     "Staff": [
       {
         "FullName": "cal1",
-        "TRId": "49522287964",
+        "TRId": "49522285964",
         "Department": "Mutfak",
         "Position": "Aþçý",
         "Contact": {
@@ -21,7 +22,7 @@
       },
       {
         "FullName": "cal2",
-        "TRId": "49522287964",
+        "TRId": "49522287464",
         "Department": "Mutfak",
         "Position": "Aþçý",
         "Contact": {
@@ -32,7 +33,7 @@
       },
       {
         "FullName": "cal3",
-        "TRId": "49522287964",
+        "TRId": "49454754836",
         "Department": "Mutfak",
         "Position": "Aþçý",
         "Contact": {
@@ -71,12 +72,13 @@
     "City": "Antalya",
     "Town": "Kaþ",
     "NumRooms": 350,
-    "Point": 1,
-    "Raters": 7,
+    "Point": 16,
+    "Raters": 2,
+    "Rate":1,
     "Staff": [
       {
         "FullName": "cal1",
-        "TRId": "49522287964",
+        "TRId": "49454754856",
         "Department": "Mutfak",
         "Position": "Aþçý",
         "Contact": {
@@ -98,7 +100,7 @@
       },
       {
         "FullName": "cal3",
-        "TRId": "49522287964",
+        "TRId": "49454754849",
         "Department": "Mutfak",
         "Position": "Aþçý",
         "Contact": {
@@ -137,12 +139,13 @@
     "City": "Antalya",
     "Town": "Kaþ",
     "NumRooms": 350,
-    "Point": 1,
-    "Raters": 7,
+    "Point": 21,
+    "Raters": 3,
+    "Rate":1,
     "Staff": [
       {
         "FullName": "cal1",
-        "TRId": "49522287964",
+        "TRId": "49454754848",
         "Department": "Mutfak",
         "Position": "Aþçý",
         "Contact": {
@@ -164,7 +167,7 @@
       },
       {
         "FullName": "cal3",
-        "TRId": "49522287964",
+        "TRId": "49454754847",
         "Department": "Mutfak",
         "Position": "Aþçý",
         "Contact": {
@@ -203,12 +206,13 @@
     "City": "Antalya",
     "Town": "Kaþ",
     "NumRooms": 350,
-    "Point": 1,
-    "Raters": 7,
+    "Point": 10,
+    "Raters": 1,
+    "Rate":1,
     "Staff": [
       {
         "FullName": "cal1",
-        "TRId": "49522287964",
+        "TRId": "49454754846",
         "Department": "Mutfak",
         "Position": "Aþçý",
         "Contact": {
@@ -219,7 +223,7 @@
       },
       {
         "FullName": "cal2",
-        "TRId": "49522287964",
+        "TRId": "49511182964",
         "Department": "Mutfak",
         "Position": "Aþçý",
         "Contact": {
@@ -230,7 +234,7 @@
       },
       {
         "FullName": "cal3",
-        "TRId": "49522287964",
+        "TRId": "49555587964",
         "Department": "Mutfak",
         "Position": "Aþçý",
         "Contact": {
@@ -269,12 +273,13 @@
     "City": "Antalya",
     "Town": "Kaþ",
     "NumRooms": 350,
-    "Point": 1,
-    "Raters": 7,
+    "Point": 40,
+    "Raters": 5,
+    "Rate":1,
     "Staff": [
       {
         "FullName": "cal1",
-        "TRId": "49522287964",
+        "TRId": "49512297964",
         "Department": "Mutfak",
         "Position": "Aþçý",
         "Contact": {
@@ -285,7 +290,7 @@
       },
       {
         "FullName": "cal2",
-        "TRId": "49522287964",
+        "TRId": "49522253964",
         "Department": "Mutfak",
         "Position": "Aþçý",
         "Contact": {
@@ -296,7 +301,7 @@
       },
       {
         "FullName": "cal3",
-        "TRId": "49522287964",
+        "TRId": "43522287964",
         "Department": "Mutfak",
         "Position": "Aþçý",
         "Contact": {

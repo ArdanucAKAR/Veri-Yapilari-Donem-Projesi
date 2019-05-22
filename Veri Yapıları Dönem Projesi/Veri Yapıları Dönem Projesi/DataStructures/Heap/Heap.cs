@@ -10,6 +10,7 @@ namespace Veri_Yapıları_Dönem_Projesi
     public class Heap
     {
         private HeapDugumu[] heapArray;
+        public int hashMap;
         private int maxSize;
         private int currentSize;
         public Heap(int maxHeapSize)

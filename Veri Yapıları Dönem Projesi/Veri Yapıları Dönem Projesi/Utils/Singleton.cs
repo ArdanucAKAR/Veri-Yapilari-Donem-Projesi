@@ -11,6 +11,8 @@ namespace Veri_Yapıları_Dönem_Projesi
         private static Singleton singleton = null;
         public BinaryTree hotels;
         public List<Manager> managers = new List<Manager>();
+        public HashMapChain hashMapChain;
+
         private Singleton()
         {
 
@@ -23,12 +25,13 @@ namespace Veri_Yapıları_Dönem_Projesi
         }
         public void Initialize()
         {
+            hashMapChain = new HashMapChain();
             hotels = new BinaryTree(null);
             List<Hotel> hotelList = new List<Hotel>();
             //hotelList.Add(new Hotel() { Id = 19, Name = "o" });
             //hotelList.Add(new Hotel() { Id = 2, Name = "a" });
             //hotelList.Add(new Hotel() { Id = 8, Name = "b" });
-            
+
             //hotelList.Add(new Hotel() { Id = 5, Name = "c" });
             //hotelList.Add(new Hotel() { Id = 15, Name = "d" });
             TextReader.Path = "\\oteller.txt";
