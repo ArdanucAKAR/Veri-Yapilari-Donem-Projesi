@@ -34,6 +34,10 @@
             this.btnRateHotel = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnListHotelOrderByStar = new System.Windows.Forms.Button();
+            this.btnPostOrder = new System.Windows.Forms.Button();
+            this.btnPreOrder = new System.Windows.Forms.Button();
+            this.btnInOrder = new System.Windows.Forms.Button();
+            this.btnSortByName = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgwHotels)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,15 +89,59 @@
             this.btnListHotelOrderByStar.Name = "btnListHotelOrderByStar";
             this.btnListHotelOrderByStar.Size = new System.Drawing.Size(114, 23);
             this.btnListHotelOrderByStar.TabIndex = 4;
-            this.btnListHotelOrderByStar.Text = "YIldıza Göre Listele";
+            this.btnListHotelOrderByStar.Text = "Yıldıza Göre Listele";
             this.btnListHotelOrderByStar.UseVisualStyleBackColor = true;
             this.btnListHotelOrderByStar.Click += new System.EventHandler(this.btnListHotelOrderByStar_Click);
+            // 
+            // btnPostOrder
+            // 
+            this.btnPostOrder.Location = new System.Drawing.Point(241, 295);
+            this.btnPostOrder.Name = "btnPostOrder";
+            this.btnPostOrder.Size = new System.Drawing.Size(75, 23);
+            this.btnPostOrder.TabIndex = 5;
+            this.btnPostOrder.Text = "PostOrder";
+            this.btnPostOrder.UseVisualStyleBackColor = true;
+            this.btnPostOrder.Click += new System.EventHandler(this.btnPostOrder_Click);
+            // 
+            // btnPreOrder
+            // 
+            this.btnPreOrder.Location = new System.Drawing.Point(241, 266);
+            this.btnPreOrder.Name = "btnPreOrder";
+            this.btnPreOrder.Size = new System.Drawing.Size(75, 23);
+            this.btnPreOrder.TabIndex = 6;
+            this.btnPreOrder.Text = "PreOrder";
+            this.btnPreOrder.UseVisualStyleBackColor = true;
+            this.btnPreOrder.Click += new System.EventHandler(this.btnPreOrder_Click);
+            // 
+            // btnInOrder
+            // 
+            this.btnInOrder.Location = new System.Drawing.Point(160, 295);
+            this.btnInOrder.Name = "btnInOrder";
+            this.btnInOrder.Size = new System.Drawing.Size(75, 23);
+            this.btnInOrder.TabIndex = 7;
+            this.btnInOrder.Text = "İnOrder";
+            this.btnInOrder.UseVisualStyleBackColor = true;
+            this.btnInOrder.Click += new System.EventHandler(this.btnInOrder_Click);
+            // 
+            // btnSortByName
+            // 
+            this.btnSortByName.Location = new System.Drawing.Point(323, 265);
+            this.btnSortByName.Name = "btnSortByName";
+            this.btnSortByName.Size = new System.Drawing.Size(103, 23);
+            this.btnSortByName.TabIndex = 8;
+            this.btnSortByName.Text = "İsme Göre Listele";
+            this.btnSortByName.UseVisualStyleBackColor = true;
+            this.btnSortByName.Click += new System.EventHandler(this.btnSortByName_Click);
             // 
             // CustomerPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(698, 408);
+            this.Controls.Add(this.btnSortByName);
+            this.Controls.Add(this.btnInOrder);
+            this.Controls.Add(this.btnPreOrder);
+            this.Controls.Add(this.btnPostOrder);
             this.Controls.Add(this.btnListHotelOrderByStar);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnRateHotel);
@@ -117,5 +165,9 @@
         private System.Windows.Forms.Button btnRateHotel;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnListHotelOrderByStar;
+        private System.Windows.Forms.Button btnPostOrder;
+        private System.Windows.Forms.Button btnPreOrder;
+        private System.Windows.Forms.Button btnInOrder;
+        private System.Windows.Forms.Button btnSortByName;
     }
 }

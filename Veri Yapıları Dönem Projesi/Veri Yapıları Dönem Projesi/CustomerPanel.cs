@@ -43,13 +43,12 @@ namespace Veri_Yapıları_Dönem_Projesi
         private void btnsortByCityTown_Click(object sender, EventArgs e)
         {
             string[] cityTownInfo = Interaction.InputBox("İl İlçe Girişi", "İli ve İlçeyi Giriniz.", "Örn:İzmir Bornova", 0, 0).Split(' ');
-            MessageBox.Show(cityTownInfo[0] + cityTownInfo[1]);
 
             foreach (var item in Singleton.Instance().hotels.PrintTree().Where(x => x.City == cityTownInfo[0] && x.Town == cityTownInfo[1]).ToList())
             {//11an 12iz //11
                 Singleton.Instance().hashMapChain.AddHotel(cityTownInfo[0] + cityTownInfo[1], item);
             }
-            dgwHotels.DataSource = Singleton.Instance().hashMapChain.GetHotels(cityTownInfo[0] + cityTownInfo[1]).DisplayHeap().OrderBy(x => x.Stars).ToList();
+            dgwHotels.DataSource = Singleton.Instance().hashMapChain.GetHotels(cityTownInfo[0] + cityTownInfo[1]).DisplayHeap().OrderByDescending(x => x.Rate).ToList();
         }
 
         private void btnAddComment_Click(object sender, EventArgs e)
@@ -96,6 +95,34 @@ namespace Veri_Yapıları_Dönem_Projesi
                 BindingList<Hotel> hotels = (BindingList<Hotel>)dgwHotels.DataSource;
                 dgwHotels.DataSource = hotels.Where(x => x.Stars == stars).OrderBy(x => x.Stars).ToList();
             }
+        }
+
+        private void btnPreOrder_Click(object sender, EventArgs e)
+        {
+            Singleton.Instance().hotels.PreOrder();
+            dgwHotels.DataSource = Singleton.Instance().hotels.PrintTree();
+
+        }
+
+        private void btnPostOrder_Click(object sender, EventArgs e)
+        {
+            Singleton.Instance().hotels.PostOrder();
+            dgwHotels.DataSource = Singleton.Instance().hotels.PrintTree();
+        }
+
+        private void btnInOrder_Click(object sender, EventArgs e)
+        {
+            Singleton.Instance().hotels.InOrder();
+            dgwHotels.DataSource = Singleton.Instance().hotels.PrintTree();
+        }
+
+        private void btnSortByName_Click(object sender, EventArgs e)
+        {
+            string name = Interaction.InputBox("İsim", "Otel İsmini Giriniz", "", 0, 0);
+            
+                BindingList<Hotel> hotels = (BindingList<Hotel>)dgwHotels.DataSource;
+                dgwHotels.DataSource = hotels.Where(x => x.Name == name).OrderByDescending(x => x.Rate).ToList();
+            
         }
     }
 }
