@@ -1,337 +1,246 @@
 [
   {
-    "Id": 4,
-    "Name": "Kaþ Otel 4",
-    "City": "Antalya",
-    "Town": "Kaþ",
-    "NumRooms": 350,
-    "Point": 7,
-    "Raters": 1,
-    "Rate":1,
+    "Id": 5,
+    "Name": "Karanlik Otel",
+    "City": "Ankara",
+    "Town": "Mamak",
+    "NumRooms": 400,
+    "Point": 1,
+    "Raters": 20,
     "Staff": [
       {
-        "FullName": "cal1",
-        "TRId": "49522285964",
+        "FullName": "Emel Önür",
+        "TRId": "49522287964",
         "Department": "Mutfak",
-        "Position": "Aþçý",
+        "Position": "Asçi",
         "Contact": {
-          "Address": "Dünya",
-          "EMail": "atesliturizmci@hotmail.com",
-          "PhoneNumber": "053169316931"
+          "Address": "Ebru Kavsagi 1 78990 Sirnak",
+          "EMail": "kerem.ozgorkey@gmail.com",
+          "PhoneNumber": "+90 (553) 452 51 91"
         }
       },
       {
-        "FullName": "cal2",
-        "TRId": "49522287464",
-        "Department": "Mutfak",
-        "Position": "Aþçý",
+        "FullName": "Ahmet Tasli",
+        "TRId": "49522287964",
+        "Department": "Restorant",
+        "Position": "Bar Sorumlusu",
         "Contact": {
-          "Address": "Dünya",
-          "EMail": "atesliturizmci@hotmail.com",
-          "PhoneNumber": "053169316931"
+          "Address": "Esma Is Hani 50 03891 Erzincan",
+          "EMail": "isinanoglu@akman.com",
+          "PhoneNumber": "05303601767"
         }
       },
       {
-        "FullName": "cal3",
-        "TRId": "49454754836",
-        "Department": "Mutfak",
-        "Position": "Aþçý",
+        "FullName": "Efe Tasçi",
+        "TRId": "49522287964",
+        "Department": "Güvenlik",
+        "Position": "Güvenlik Görevlisi",
         "Contact": {
-          "Address": "Dünya",
-          "EMail": "atesliturizmci@hotmail.com",
-          "PhoneNumber": "053169316931"
+          "Address": "Burcu Sokak 1 10297 Manisa",
+          "EMail": "teronat@turk.net",
+          "PhoneNumber": "+90 (546) 839 21 18"
         }
       }
     ],
     "Comments": [
       {
-        "Customer": {},
+        "Customer": "Esma Akal",
         "Content": "güzel bi otel"
       },
       {
-        "Customer": {},
-        "Content": "Trivago"
-      },
-      {
-        "Customer": {},
-        "Content": "eh bi otel"
-      },
-      {
-        "Customer": {},
-        "Content": "ne oteli"
-      },
-      {
-        "Customer": {},
-        "Content": "soru neydi ?"
+        "Customer": "Cihan Asikoglu",
+        "Content": "Tekrar gidilmeye deger bir otel"
       }
+     
+     
     ]
   },
   {
-    "Id": 5,
-    "Name": "Kaþ Otel 5",
-    "City": "Antalya",
-    "Town": "Kaþ",
-    "NumRooms": 350,
-    "Point": 16,
-    "Raters": 2,
-    "Rate":1,
+    "Id": 4,
+    "Name": "Ottoman Otel",
+    "City": "Istanbul",
+    "Town": "Arnavutköy",
+    "NumRooms": 450,
+    "Point": 1,
+    "Raters": 18,
     "Staff": [
       {
-        "FullName": "cal1",
-        "TRId": "49454754856",
-        "Department": "Mutfak",
-        "Position": "Aþçý",
-        "Contact": {
-          "Address": "Dünya",
-          "EMail": "atesliturizmci@hotmail.com",
-          "PhoneNumber": "053169316931"
-        }
-      },
-      {
-        "FullName": "cal2",
+        "FullName": "Rüzgar Avan",
         "TRId": "49522287964",
         "Department": "Mutfak",
-        "Position": "Aþçý",
+        "Position": "Asçi",
         "Contact": {
-          "Address": "Dünya",
-          "EMail": "atesliturizmci@hotmail.com",
-          "PhoneNumber": "053169316931"
-        }
+          "Address": "Tazegül Kavsagi 364 55553 Isparta",
+          "EMail": "oztuna.sahnur@turk.net",
+          "PhoneNumber": "0 (531) 093 27 12"
+        } 
       },
       {
-        "FullName": "cal3",
-        "TRId": "49454754849",
-        "Department": "Mutfak",
-        "Position": "Aþçý",
+        "FullName": "Esma Yalçin",
+        "TRId": "49522287964",
+        "Department": "Barmenlik",
+        "Position": "Garson",
         "Contact": {
-          "Address": "Dünya",
-          "EMail": "atesliturizmci@hotmail.com",
-          "PhoneNumber": "053169316931"
-        }
-      }
+          "Address": "Koray Mevkii 27 33961 Burdur",
+          "EMail": "yesilkaya.sinem@kilicci.net",
+          "PhoneNumber": "+905014895144"
+        }},
+      {
+        "FullName": "Ece Çatalbas",
+        "TRId": "49522287964",
+        "Department": "Insan Kaynaklari",
+        "Position": "Büro Memuru",
+        "Contact": {
+          "Address": "Erbay Sokak 43 17366 Erzurum",
+          "EMail": "gorkem.akman@adivar.info",
+          "PhoneNumber": "+0 (500) 663 06 13"
+       } }
+      
     ],
     "Comments": [
-      {
-        "Customer": {},
-        "Content": "güzel bi otel"
+       {
+        "Customer": "Güney Erkekli",
+        "Content": "Kötü bir otel"
       },
       {
-        "Customer": {},
-        "Content": "Trivago"
-      },
-      {
-        "Customer": {},
-        "Content": "eh bi otel"
-      },
-      {
-        "Customer": {},
-        "Content": "ne oteli"
-      },
-      {
-        "Customer": {},
-        "Content": "soru neydi ?"
+        "Customer": "Rüya Tasçi",
+        "Content": "Birdaha asla geri gitmem"
       }
     ]
   },
   {
     "Id": 7,
-    "Name": "Kaþ Otel 7",
-    "City": "Antalya",
-    "Town": "Kaþ",
-    "NumRooms": 350,
-    "Point": 21,
-    "Raters": 3,
-    "Rate":1,
+    "Name": "Folkart Otel",
+    "City": "Izmir",
+    "Town": "Bayrakli",
+    "NumRooms": 600,
+    "Point": 1,
+    "Raters": 30,
     "Staff": [
       {
-        "FullName": "cal1",
-        "TRId": "49454754848",
-        "Department": "Mutfak",
-        "Position": "Aþçý",
-        "Contact": {
-          "Address": "Dünya",
-          "EMail": "atesliturizmci@hotmail.com",
-          "PhoneNumber": "053169316931"
-        }
-      },
-      {
-        "FullName": "cal2",
+        "FullName": "Ada Elmastasoglu",
         "TRId": "49522287964",
-        "Department": "Mutfak",
-        "Position": "Aþçý",
+        "Department": "Animatör",
+        "Position": "Animatör",
         "Contact": {
-          "Address": "Dünya",
-          "EMail": "atesliturizmci@hotmail.com",
-          "PhoneNumber": "053169316931"
+          "Address": "Askin Duragi 4 59151 Usak",
+          "EMail": "akbulut.ege@gmail.com",
+          "PhoneNumber": "05328656503"
         }
       },
       {
-        "FullName": "cal3",
-        "TRId": "49454754847",
-        "Department": "Mutfak",
-        "Position": "Aþçý",
+        "FullName": "Emel Karaböcek",
+        "TRId": "49522287964",
+        "Department": "Halkla Iliskiler",
+        "Position": "Halkla iliskiler Müdürü",
         "Contact": {
-          "Address": "Dünya",
-          "EMail": "atesliturizmci@hotmail.com",
-          "PhoneNumber": "053169316931"
+          "Address": "Sahnur Is Hani 396 21364 Kocaeli",
+          "EMail": "irem96@karabocek.com.tr",
+          "PhoneNumber": "+905582216550"
+        }
+      },
+      {
+        "FullName": "Baran Özberk",
+        "TRId": "49522287964",
+        "Department": "Teknik Servis",
+        "Position": "Elektrikçi",
+        "Contact": {
+          "Address": "Köylüoglu Caddesi 30 17530 Afyonkarahisar",
+          "EMail": "vtekand@kormukcu.edu.tr",
+          "PhoneNumber": "0 543 108 73 85"
+        }},
+      {
+        "FullName": "Sahnur Yilmazer",
+        "TRId": "49522287964",
+        "Department": "Saglik, Masaj ve Spor",
+        "Position": "Masör",
+        "Contact": {
+          "Address": "Atan Kavsagi 803 74659 Edirne",
+          "EMail": "burak.kahveci@ekici.edu.tr",
+          "PhoneNumber": "+90 548 692 98 21"
         }
       }
     ],
     "Comments": [
-      {
-        "Customer": {},
-        "Content": "güzel bi otel"
+{
+        "Customer": "Ebru Besok",
+        "Content": "Havuzu Çocuklarla gelmek için çok uygun"
       },
       {
-        "Customer": {},
-        "Content": "Trivago"
+        "Customer": "Ada Pekkan",
+        "Content": "Önümüzdeki senede gelmeyi dört gözle bekliyorum"
       },
-      {
-        "Customer": {},
-        "Content": "eh bi otel"
-      },
-      {
-        "Customer": {},
-        "Content": "ne oteli"
-      },
-      {
-        "Customer": {},
-        "Content": "soru neydi ?"
+ {
+        "Customer": "Irem Erginsoy",
+        "Content": "Eylenceli aktiviteleriyle çok canayakin bir otel"
       }
     ]
   },
   {
     "Id": 9,
-    "Name": "Kaþ Otel 9",
-    "City": "Antalya",
-    "Town": "Kaþ",
-    "NumRooms": 350,
-    "Point": 10,
-    "Raters": 1,
-    "Rate":1,
+    "Name": "Kaya Otel",
+    "City": "Izmir",
+    "Town": "Alsancak",
+    "NumRooms": 355,
+    "Point": 1,
+    "Raters": 19,
     "Staff": [
       {
-        "FullName": "cal1",
-        "TRId": "49454754846",
-        "Department": "Mutfak",
-        "Position": "Aþçý",
+        "FullName": "Askin Eksioglu",
+        "TRId": "49522287964",
+        "Department": "Çamasir Hane",
+        "Position": "Çamasirhane Sefi",
         "Contact": {
-          "Address": "Dünya",
-          "EMail": "atesliturizmci@hotmail.com",
-          "PhoneNumber": "053169316931"
+          "Address": "Pekkan Duragi 891 40761 Yalova",
+          "EMail": "onur38@oymen.edu.tr",
+          "PhoneNumber": "+905002604517"
         }
       },
       {
-        "FullName": "cal2",
-        "TRId": "49511182964",
-        "Department": "Mutfak",
-        "Position": "Aþçý",
+        "FullName": "Sahnur Özkara",
+        "TRId": "49522287964",
+        "Department": "Teknik Servis",
+        "Position": "Sihhi tesisatçi",
         "Contact": {
-          "Address": "Dünya",
-          "EMail": "atesliturizmci@hotmail.com",
-          "PhoneNumber": "053169316931"
+          "Address": "Emel Is Hani 91 17372 Kocaeli",
+          "EMail": "doruk10@mynet.com",
+          "PhoneNumber": "+90 538 999 74 10"
         }
       },
       {
-        "FullName": "cal3",
-        "TRId": "49555587964",
-        "Department": "Mutfak",
-        "Position": "Aþçý",
+        "FullName": "Burak Korol",
+        "TRId": "49522287964",
+        "Department": "Cankurtaran ve Havuz Görevlisi",
+        "Position": "Cankurtaran",
         "Contact": {
-          "Address": "Dünya",
-          "EMail": "atesliturizmci@hotmail.com",
-          "PhoneNumber": "053169316931"
+          "Address": "Kerem Sokak 39 47776 Amasya",
+          "EMail": "alniacik.emirhan@mynet.com",
+          "PhoneNumber": "+90 551 567 68 93"
         }
       }
     ],
     "Comments": [
       {
-        "Customer": {},
-        "Content": "güzel bi otel"
+        "Customer": "Burcu Kaya",
+        "Content": "Izmirin elit yerlerin hos bi otel"
       },
       {
-        "Customer": {},
-        "Content": "Trivago"
+        "Customer": "Esma Çapanoglu",
+        "Content": "Çok Kötü bir otel"
       },
       {
-        "Customer": {},
-        "Content": "eh bi otel"
+        "Customer": "Çagan Aybar",
+        "Content": "Internet çok yavasti ama hizmet güzeldi"
       },
       {
-        "Customer": {},
-        "Content": "ne oteli"
+        "Customer": "Brad Pit",
+        "Content": "Such a lovely Hotel"
       },
       {
-        "Customer": {},
-        "Content": "soru neydi ?"
+        "Customer": "Megan Fox",
+        "Content": "I love the hospitality and helpful crew"
       }
     ]
-  },
-  {
-    "Id": 12,
-    "Name": "Kaþ Otel 12",
-    "City": "Antalya",
-    "Town": "Kaþ",
-    "NumRooms": 350,
-    "Point": 40,
-    "Raters": 5,
-    "Rate":1,
-    "Staff": [
-      {
-        "FullName": "cal1",
-        "TRId": "49512297964",
-        "Department": "Mutfak",
-        "Position": "Aþçý",
-        "Contact": {
-          "Address": "Dünya",
-          "EMail": "atesliturizmci@hotmail.com",
-          "PhoneNumber": "053169316931"
-        }
-      },
-      {
-        "FullName": "cal2",
-        "TRId": "49522253964",
-        "Department": "Mutfak",
-        "Position": "Aþçý",
-        "Contact": {
-          "Address": "Dünya",
-          "EMail": "atesliturizmci@hotmail.com",
-          "PhoneNumber": "053169316931"
-        }
-      },
-      {
-        "FullName": "cal3",
-        "TRId": "43522287964",
-        "Department": "Mutfak",
-        "Position": "Aþçý",
-        "Contact": {
-          "Address": "Dünya",
-          "EMail": "atesliturizmci@hotmail.com",
-          "PhoneNumber": "053169316931"
-        }
-      }
-    ],
-    "Comments": [
-      {
-        "Customer": {},
-        "Content": "güzel bi otel"
-      },
-      {
-        "Customer": {},
-        "Content": "Trivago"
-      },
-      {
-        "Customer": {},
-        "Content": "eh bi otel"
-      },
-      {
-        "Customer": {},
-        "Content": "ne oteli"
-      },
-      {
-        "Customer": {},
-        "Content": "soru neydi ?"
-      }
-    ]
+  
   }
 ]

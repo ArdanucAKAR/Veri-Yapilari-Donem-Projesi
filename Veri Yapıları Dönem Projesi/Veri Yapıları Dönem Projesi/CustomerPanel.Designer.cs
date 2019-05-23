@@ -38,6 +38,7 @@
             this.btnPreOrder = new System.Windows.Forms.Button();
             this.btnInOrder = new System.Windows.Forms.Button();
             this.btnSortByName = new System.Windows.Forms.Button();
+            this.btnTreeInformation = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgwHotels)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,17 +128,28 @@
             // 
             this.btnSortByName.Location = new System.Drawing.Point(323, 265);
             this.btnSortByName.Name = "btnSortByName";
-            this.btnSortByName.Size = new System.Drawing.Size(103, 23);
+            this.btnSortByName.Size = new System.Drawing.Size(125, 23);
             this.btnSortByName.TabIndex = 8;
             this.btnSortByName.Text = "İsme Göre Listele";
             this.btnSortByName.UseVisualStyleBackColor = true;
             this.btnSortByName.Click += new System.EventHandler(this.btnSortByName_Click);
+            // 
+            // btnTreeInformation
+            // 
+            this.btnTreeInformation.Location = new System.Drawing.Point(323, 295);
+            this.btnTreeInformation.Name = "btnTreeInformation";
+            this.btnTreeInformation.Size = new System.Drawing.Size(125, 23);
+            this.btnTreeInformation.TabIndex = 9;
+            this.btnTreeInformation.Text = "Ağaç Bilgilerini Göster";
+            this.btnTreeInformation.UseVisualStyleBackColor = true;
+            this.btnTreeInformation.Click += new System.EventHandler(this.btnTreeInformation_Click);
             // 
             // CustomerPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(698, 408);
+            this.Controls.Add(this.btnTreeInformation);
             this.Controls.Add(this.btnSortByName);
             this.Controls.Add(this.btnInOrder);
             this.Controls.Add(this.btnPreOrder);
@@ -169,5 +181,6 @@
         private System.Windows.Forms.Button btnPreOrder;
         private System.Windows.Forms.Button btnInOrder;
         private System.Windows.Forms.Button btnSortByName;
+        private System.Windows.Forms.Button btnTreeInformation;
     }
 }

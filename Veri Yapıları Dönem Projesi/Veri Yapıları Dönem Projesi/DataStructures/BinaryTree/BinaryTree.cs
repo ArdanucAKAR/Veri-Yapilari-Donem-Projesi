@@ -52,6 +52,33 @@ namespace Veri_Yapıları_Dönem_Projesi
         {
             return nodes;
         }
+        public int getMaxDepth()
+        {
+            return findHeight(this.root);
+        }
+
+        private int findHeight(BinaryTreeNode temp)
+        {
+            if (root == null)
+            {
+                Console.WriteLine("Tree is empty");
+                return 0;
+            }
+            else
+            {
+                int leftHeight = 0, rightHeight = 0;
+                if (temp.left != null)
+                    leftHeight = findHeight(temp.left);
+
+                if (temp.right != null)
+                    rightHeight = findHeight(temp.right);
+
+                int max = (leftHeight > rightHeight) ? leftHeight : rightHeight;
+
+                return (max + 1);
+            }
+        }
+
         //Gezinme İşlemleri
         public void PreOrder()
         {

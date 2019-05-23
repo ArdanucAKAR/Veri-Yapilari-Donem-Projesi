@@ -37,7 +37,6 @@ namespace Veri_Yapıları_Dönem_Projesi
             dgwHotels.Columns[8].Visible = false;
             dgwHotels.Columns[0].Visible = false;
 
-
         }
 
         private void btnsortByCityTown_Click(object sender, EventArgs e)
@@ -123,6 +122,12 @@ namespace Veri_Yapıları_Dönem_Projesi
                 BindingList<Hotel> hotels = (BindingList<Hotel>)dgwHotels.DataSource;
                 dgwHotels.DataSource = hotels.Where(x => x.Name == name).OrderByDescending(x => x.Rate).ToList();
             
+        }
+
+        private void btnTreeInformation_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("İkili ağaç eleman sayısı : " + Singleton.Instance().hotels.NodeCount().ToString()
+                + "\nİkili ağaç derinliği : " + Singleton.Instance().hotels.getMaxDepth().ToString());
         }
     }
 }

@@ -43,9 +43,9 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(98, 139);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(100, 20);
             this.txtPassword.TabIndex = 5;
-            this.txtPassword.Text = "admin";
             // 
             // btnLogin
             // 
@@ -81,7 +81,6 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(100, 20);
             this.txtUsername.TabIndex = 4;
-            this.txtUsername.Text = "admin";
             // 
             // btnCustomerLogin
             // 
@@ -129,7 +128,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
-          
             this.ResumeLayout(false);
             this.PerformLayout();
 

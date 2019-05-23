@@ -9,6 +9,7 @@ namespace Veri_Yapıları_Dönem_Projesi
 {
     public class Heap
     {
+        public int depthcount = 0;
         private HeapDugumu[] heapArray;
         public int hashMap;
         private int maxSize;
@@ -113,6 +114,7 @@ namespace Veri_Yapıları_Dönem_Projesi
                         Console.Write(' ');
             }
             Console.WriteLine("\n" + separator + separator);
+            depthcount++;
             return hotels;
         } 
     }
