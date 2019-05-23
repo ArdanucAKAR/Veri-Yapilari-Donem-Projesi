@@ -1,15 +1,14 @@
 
-<p align="center">
-  <img src="https://lh3.googleusercontent.com/dVfLuPxUi3fBkx5szWoz1ZHyB4AiBoPKgexN2d_aeYBReeqwQXpExbJcDXgbtsZWt62xOJaQWmPMZrjGJex-p2MK9yPQ2wiF-JTGLztYP_h-R7N0j15QdDTuIObo6ZpzwlrZR8vD">
-</p>
 
-Veri Yapıları - Hotels Assemble
+<center><img src="https://lh3.googleusercontent.com/dVfLuPxUi3fBkx5szWoz1ZHyB4AiBoPKgexN2d_aeYBReeqwQXpExbJcDXgbtsZWt62xOJaQWmPMZrjGJex-p2MK9yPQ2wiF-JTGLztYP_h-R7N0j15QdDTuIObo6ZpzwlrZR8vD"/></center>
+
+# Veri Yapıları - Hotels Assemble
 
 24.05.2019
 
 ─
 
-Proje Üyeleri;
+### Proje Üyeleri;
 
 Ardanuc Akar 162804011
 
@@ -19,10 +18,9 @@ Volkan Kahraman 162804002
 
   
 
-# Veri Yapıları 2.Dönem
+### Veri Yapıları -  Pelin Yıldırım
 
-Pelin Yıldırım
-
+  
   
   
 
@@ -58,46 +56,45 @@ C# Programlama dili
 
 # Problemlerin Tanımı;
 
-1.  ## Sistem yetkililerinin yeni otel kaydedilmesi
+1. #### Sistem yetkililerinin yeni otel kaydedilmesi
     
 
 Yeni otel eklenirken aynı zamanda çalışan listesi ve yorum listesi oluşturmak ve tüm özelliklerini doğru bir şekilde alındığını kontrol etmek.
 
-2.  ## Sistemdeki otel bilgilerinin güncellenmesi
+2.  #### Sistemdeki otel bilgilerinin güncellenmesi
     
 
+Otellerin isimlerini, bulundukları şehir ve ilçelerini güncellenmesi.
+
+3.  #### Sisteme yeni personel girilmesi
+    
+
+Personelin bilgileri ile otellere kayıt yapmasını sağlanması.
+
+4.  #### Sistemdeki çalışan bilgilerinin güncellenmesi
+    
+
+Otele kayıt edilen çalışanın bilgilerini değiştirilebilmesi
+
+5.  #### Bağlı oldukları departmana göre çalışanların listelenmesi
+    
+6.  #### Otellerin il ilçeye göre listelenmesi
+    
+
+Otellerin il ve ilçesine göre filtelenip, ratelerine göre listelenmesi
+
+7.  #### İkili ağaçın özelliklerinin kullanılması
+    
+
+Otellerin ikili ağaç’a eklenip preorder inorder postorder yapılabilmesi ve ağacın derinliğini ve ekli olan düğümlerin sayısını görebilmesi
+
+# Kısa Tanımı;
+
+Büyük otel zincirlerinin tek bir program altında bütün otelleri yönetmesine,personel eklenmesine,personellerin puanlandırılmasında, otel yetkililerine yardımcı olacak bunun yanında müşterilerin kendisine en yakın en iyi ve kendisine en çok hitap eden otelleri bulmasına yardımcı olacak yazılım sistemidir.
+
+  ![](https://lh3.googleusercontent.com/O_Gfidz4xJxYokhWbRZ9x19q2vd8RJbORtX9mHDA-hLWF7LX1RFhTGkxycudg3x0V-Jy8SHndx0YTP21IZWUu3ZhOK008B4SQmrkYgH1whMQ-hBXByXJeyeTR8VM8NA-Z74hJuWV)
   
 
-3.  ## Sisteme yeni personel girilmesi
-    
-
-Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin.
-
-4.  ## Sistemdeki çalışan bilgilerinin güncellenmesi
-    
-
-(Aktif)Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin.
-
-5.  ## Bağlı oldukları departmana göre çalışanların listelenmesi
-    
-
-Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin.
-
-6.  ## Bağlı oldukları departmana göre çalışanların listelenmesi
-    
-
-Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin.
-
-7.  ## Bağlı oldukları departmana göre çalışanların listelenmesi
-    
-
-Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin Metninizi buraya girin.
-
-  
-
-Büyük otel zincirlerinin tek bir program altında bütün otelleri yönetmesine,personel eklenmesine,personellerin puanlandırılmasında, otel yetkililerine yardımcı olacak bunun yanında müşterilerin kendisine en yakın en iyi ve kendisine en çok hitap eden otelleri bulmasına yardımcı olacak yazılım otomasyonudur.
-
-![](https://lh3.googleusercontent.com/O_Gfidz4xJxYokhWbRZ9x19q2vd8RJbORtX9mHDA-hLWF7LX1RFhTGkxycudg3x0V-Jy8SHndx0YTP21IZWUu3ZhOK008B4SQmrkYgH1whMQ-hBXByXJeyeTR8VM8NA-Z74hJuWV)
 ## 1.Binary Tree (İkili Ağaç) :
 
 1.  NodeCount()
@@ -181,10 +178,11 @@ Büyük otel zincirlerinin tek bir program altında bütün otelleri yönetmesin
 
 # Çalışma Süreleri;
 
-  
-  
-  
-  
+Ayrı gayrı yok 25 saat boyunca birlikte proje ile uğraştık.
+
+# Bu 25 saat içerisinde kimin ne yaptığı bellidir.
+
+
   
   
   
@@ -192,6 +190,8 @@ Büyük otel zincirlerinin tek bir program altında bütün otelleri yönetmesin
   
 
 # Ekran Görüntüleri ;
+
+![](https://lh6.googleusercontent.com/dYFR5K3hiAok_h8U2LCy1CW-GE7QaBFIw8qcxLR6Y3BDYOuDGfKtGe5Nct1vogZz1YfMkjJ88o-rKvXkCr26qkT7xwaYZBHOlj-pGr_jY1TNKjp6zB3dssxqyse_NUHJvn3eh2t7)
 
   
   
@@ -206,12 +206,12 @@ Büyük otel zincirlerinin tek bir program altında bütün otelleri yönetmesin
 
 # Yararlanılan Kaynaklar ;
 
-1.  [www.stackoverflow.com](http://www.stackoverflow.com)
+1.  ### [www.stackoverflow.com](http://www.stackoverflow.com)
     
-2.   [www.google.com](http://www.google.com)
+2.  ### [www.google.com](http://www.google.com)
     
-3.   [docs.microsoft.com](https://docs.microsoft.com/tr-tr/)
+3.  ### [docs.microsoft.com](https://docs.microsoft.com/tr-tr/)
     
-4.  Yazılım Mimarisi ve Tasarımı Slaytları
+4.  ### Yazılım Mimarisi ve Tasarımı Slaytları
     
-5.  Veri Yapıları Slaytları
+5.  ### Veri Yapıları Slaytları
