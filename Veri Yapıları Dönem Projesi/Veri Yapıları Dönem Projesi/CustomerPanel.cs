@@ -36,23 +36,19 @@ namespace Veri_Yapıları_Dönem_Projesi
             dgwHotels.Columns[7].Visible = false;
             dgwHotels.Columns[8].Visible = false;
             dgwHotels.Columns[0].Visible = false;
-
         }
 
         private void btnsortByCityTown_Click(object sender, EventArgs e)
         {
-            string[] cityTownInfo = Interaction.InputBox("İl İlçe Girişi", "İli ve İlçeyi Giriniz.", "Örn:İzmir Bornova", 0, 0).Split(' ');
-
+            string[] cityTownInfo = Interaction.InputBox("İl İlçe Girişi", "İli ve İlçeyi Giriniz.", "Örn:İzmir Bornova", (Screen.PrimaryScreen.Bounds.Width / 2) - 175, (Screen.PrimaryScreen.Bounds.Height / 2) - 100).Split(' ');
             foreach (var item in Singleton.Instance().hotels.PrintTree().Where(x => x.City == cityTownInfo[0] && x.Town == cityTownInfo[1]).ToList())
-            {//11an 12iz //11
                 Singleton.Instance().hashMapChain.AddHotel(cityTownInfo[0] + cityTownInfo[1], item);
-            }
             dgwHotels.DataSource = Singleton.Instance().hashMapChain.GetHotels(cityTownInfo[0] + cityTownInfo[1]).DisplayHeap().OrderByDescending(x => x.Rate).ToList();
         }
 
         private void btnAddComment_Click(object sender, EventArgs e)
         {
-            string commentContent = Interaction.InputBox("Yorum Girişi", "Lütfen Yorum Yapınız.", "", 0, 0);
+            string commentContent = Interaction.InputBox("Yorum Girişi", "Lütfen Yorum Yapınız.", "", (Screen.PrimaryScreen.Bounds.Width / 2) - 175, (Screen.PrimaryScreen.Bounds.Height / 2) - 100);
             currentHotel = Singleton.Instance().hotels.PrintTree().Where(x => x.Id == Convert.ToInt32(dgwHotels.SelectedRows[0].Cells[0].Value)).ToList()[0];
             currentHotel.Comments.Add(new Comment()
             {
@@ -67,17 +63,14 @@ namespace Veri_Yapıları_Dönem_Projesi
             {
                 string Comments = "";
                 foreach (var item in Singleton.Instance().hotels.PrintTree().Where(x => x.Id == Convert.ToInt32(dgwHotels.SelectedRows[0].Cells[0].Value)).ToList()[0].Comments)
-                {
                     Comments += item.ToString() + "\n-------\n";
-                }
                 MessageBox.Show(Comments);
-
             }
         }
 
         private void btnRateHotel_Click(object sender, EventArgs e)
         {
-            string Rate = Interaction.InputBox("Puan Girişi", "Lütfen Puan Veriniz.", "", 0, 0);
+            string Rate = Interaction.InputBox("Puan Girişi", "Lütfen Puan Veriniz.", "", (Screen.PrimaryScreen.Bounds.Width / 2) - 175, (Screen.PrimaryScreen.Bounds.Height / 2) - 100);
             Singleton.Instance().hotels.PrintTree().Where(x => x.Id == Convert.ToInt32(dgwHotels.SelectedRows[0].Cells[0].Value)).ToList()[0].RateTheHotel(int.Parse(Rate));
             dgwHotels.Update();
             dgwHotels.Refresh();
@@ -86,7 +79,7 @@ namespace Veri_Yapıları_Dönem_Projesi
 
         private void btnListHotelOrderByStar_Click(object sender, EventArgs e)
         {
-            int stars = Convert.ToInt32(Interaction.InputBox("Yıldız", "Yıldız Sayısı Giriniz", "Örn: 1-5", 0, 0));
+            int stars = Convert.ToInt32(Interaction.InputBox("Yıldız", "Yıldız Sayısı Giriniz", "Örn: 1-5", (Screen.PrimaryScreen.Bounds.Width / 2) - 175, (Screen.PrimaryScreen.Bounds.Height / 2) - 100));
             if (stars < 1 || stars > 5)
                 MessageBox.Show("Hatalı Değer Girdiniz");
             else
@@ -100,7 +93,6 @@ namespace Veri_Yapıları_Dönem_Projesi
         {
             Singleton.Instance().hotels.PreOrder();
             dgwHotels.DataSource = Singleton.Instance().hotels.PrintTree();
-
         }
 
         private void btnPostOrder_Click(object sender, EventArgs e)
@@ -117,11 +109,9 @@ namespace Veri_Yapıları_Dönem_Projesi
 
         private void btnSortByName_Click(object sender, EventArgs e)
         {
-            string name = Interaction.InputBox("İsim", "Otel İsmini Giriniz", "", 0, 0);
-            
-                BindingList<Hotel> hotels = (BindingList<Hotel>)dgwHotels.DataSource;
-                dgwHotels.DataSource = hotels.Where(x => x.Name == name).OrderByDescending(x => x.Rate).ToList();
-            
+            string name = Interaction.InputBox("İsim", "Otel İsmini Giriniz", "", (Screen.PrimaryScreen.Bounds.Width / 2) - 175, (Screen.PrimaryScreen.Bounds.Height / 2) - 100);
+            BindingList<Hotel> hotels = (BindingList<Hotel>)dgwHotels.DataSource;
+            dgwHotels.DataSource = hotels.Where(x => x.Name == name).OrderByDescending(x => x.Rate).ToList();
         }
 
         private void btnTreeInformation_Click(object sender, EventArgs e)

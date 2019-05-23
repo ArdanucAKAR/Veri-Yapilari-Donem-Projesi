@@ -1,40 +1,57 @@
 [
   {
     "Id": 5,
-    "Name": "Karanlik Otel",
+    "Name": "Karanlýk Otel",
     "City": "Ankara",
     "Town": "Mamak",
     "NumRooms": 400,
-    "Point": 1,
-    "Raters": 20,
+    "Stars": 3,
+    "Point": 20,
+    "Raters": 3,
+    "Rate": 0,
     "Staff": [
       {
         "FullName": "Emel Önür",
-        "TRId": "49522287964",
+        "TRId": "84450144224",
         "Department": "Mutfak",
-        "Position": "Asçi",
+        "Position": "Aþçý",
+        "Rate": 13,
         "Contact": {
-          "Address": "Ebru Kavsagi 1 78990 Sirnak",
+          "Address": "Ebru Kavþaðý 1 78990 Þýrnak",
           "EMail": "kerem.ozgorkey@gmail.com",
           "PhoneNumber": "+90 (553) 452 51 91"
         }
       },
       {
-        "FullName": "Ahmet Tasli",
-        "TRId": "49522287964",
+        "FullName": "Ebru Tuðlu",
+        "TRId": "14349894282",
+        "Department": "Mutfak",
+        "Position": "Su Þefi",
+        "Rate": 17,
+        "Contact": {
+          "Address": "Çýnar Kavþaðý 6 32801 Þýrnak",
+          "EMail": "ahmet.dogan@alyanak.net",
+          "PhoneNumber": "0 (532) 512 14 11"
+        }
+      },
+      {
+        "FullName": "Ahmet Taþlý",
+        "TRId": "46450986518",
         "Department": "Restorant",
         "Position": "Bar Sorumlusu",
+        "Rate": 17,
         "Contact": {
-          "Address": "Esma Is Hani 50 03891 Erzincan",
+          "Address": "Esma Ýþ Haný 50 03891 Erzincan",
           "EMail": "isinanoglu@akman.com",
           "PhoneNumber": "05303601767"
         }
       },
       {
-        "FullName": "Efe Tasçi",
-        "TRId": "49522287964",
+        "FullName": "Efe Taþçý",
+        "TRId": "56771244556",
         "Department": "Güvenlik",
         "Position": "Güvenlik Görevlisi",
+        "Rate": 14,
         "Contact": {
           "Address": "Burcu Sokak 1 10297 Manisa",
           "EMail": "teronat@turk.net",
@@ -44,66 +61,90 @@
     ],
     "Comments": [
       {
-        "Customer": "Esma Akal",
+        "Customer": {
+          "Fullname": "Esma Akal"
+        },
         "Content": "güzel bi otel"
       },
       {
-        "Customer": "Cihan Asikoglu",
-        "Content": "Tekrar gidilmeye deger bir otel"
+        "Customer": {
+          "Fullname": "Cihan Aþýkoðlu"
+        },
+        "Content": "Tekrar gidilmeye deðer bir otel"
       }
-     
-     
     ]
   },
   {
     "Id": 4,
     "Name": "Ottoman Otel",
-    "City": "Istanbul",
+    "City": "Ýstanbul",
     "Town": "Arnavutköy",
-    "NumRooms": 450,
-    "Point": 1,
-    "Raters": 18,
+    "NumRooms": 350,
+    "Stars": 0,
+    "Point": 15,
+    "Raters": 2,
+    "Rate": 0,
     "Staff": [
       {
         "FullName": "Rüzgar Avan",
-        "TRId": "49522287964",
+        "TRId": "79873555436",
         "Department": "Mutfak",
-        "Position": "Asçi",
+        "Position": "Aþçý",
+        "Rate": 21,
         "Contact": {
-          "Address": "Tazegül Kavsagi 364 55553 Isparta",
+          "Address": "Tazegül Kavþaðý 364 55553 Isparta",
           "EMail": "oztuna.sahnur@turk.net",
           "PhoneNumber": "0 (531) 093 27 12"
-        } 
+        }
       },
       {
-        "FullName": "Esma Yalçin",
-        "TRId": "49522287964",
+        "FullName": "Ebru Koyuncu",
+        "TRId": "89038245638",
+        "Department": "Mutfak",
+        "Position": "Aþçý",
+        "Rate": 23,
+        "Contact": {
+          "Address": "Ada Mevkii 9 44218 Karaman",
+          "EMail": "oztuna.sahnur@turk.net",
+          "PhoneNumber": "05589007795"
+        }
+      },
+      {
+        "FullName": "Esma Yalçýn",
+        "TRId": "58049053396",
         "Department": "Barmenlik",
         "Position": "Garson",
+        "Rate": 18,
         "Contact": {
           "Address": "Koray Mevkii 27 33961 Burdur",
           "EMail": "yesilkaya.sinem@kilicci.net",
           "PhoneNumber": "+905014895144"
-        }},
+        }
+      },
       {
-        "FullName": "Ece Çatalbas",
-        "TRId": "49522287964",
-        "Department": "Insan Kaynaklari",
+        "FullName": "Ece Çatalbaþ",
+        "TRId": "26969603472",
+        "Department": "Ýnsan Kaynaklarý",
         "Position": "Büro Memuru",
+        "Rate": 17,
         "Contact": {
           "Address": "Erbay Sokak 43 17366 Erzurum",
           "EMail": "gorkem.akman@adivar.info",
           "PhoneNumber": "+0 (500) 663 06 13"
-       } }
-      
+        }
+      }
     ],
     "Comments": [
-       {
-        "Customer": "Güney Erkekli",
+      {
+        "Customer": {
+          "Fullname": "Güney Erkekli"
+        },
         "Content": "Kötü bir otel"
       },
       {
-        "Customer": "Rüya Tasçi",
+        "Customer": {
+          "Fullname": "Rüya Taþçý"
+        },
         "Content": "Birdaha asla geri gitmem"
       }
     ]
@@ -111,136 +152,187 @@
   {
     "Id": 7,
     "Name": "Folkart Otel",
-    "City": "Izmir",
-    "Town": "Bayrakli",
-    "NumRooms": 600,
-    "Point": 1,
-    "Raters": 30,
+    "City": "Ýzmir",
+    "Town": "Bayraklý",
+    "NumRooms": 350,
+    "Stars": 2,
+    "Point": 13,
+    "Raters": 4,
+    "Rate": 0,
     "Staff": [
       {
-        "FullName": "Ada Elmastasoglu",
-        "TRId": "49522287964",
+        "FullName": "Ada Elmastaþoðlu",
+        "TRId": "24471993302",
         "Department": "Animatör",
         "Position": "Animatör",
+        "Rate": 16,
         "Contact": {
-          "Address": "Askin Duragi 4 59151 Usak",
+          "Address": "Aþkýn Duraðý 4 59151 Uþak",
           "EMail": "akbulut.ege@gmail.com",
           "PhoneNumber": "05328656503"
         }
       },
       {
-        "FullName": "Emel Karaböcek",
-        "TRId": "49522287964",
-        "Department": "Halkla Iliskiler",
-        "Position": "Halkla iliskiler Müdürü",
+        "FullName": "Doruk Balaban",
+        "TRId": "18956720378",
+        "Department": "Teknik Servis",
+        "Position": "Sýhhi tesisatçý",
+        "Rate": 14,
         "Contact": {
-          "Address": "Sahnur Is Hani 396 21364 Kocaeli",
+          "Address": "Kunt Duraðý 0 33461 Isparta",
+          "EMail": "esma.koybasi@kunt.com",
+          "PhoneNumber": "0 545 681 99 06"
+        }
+      },
+      {
+        "FullName": "Emel Karaböcek",
+        "TRId": "96677792980",
+        "Department": "Halkla Ýliþkiler",
+        "Position": "Halkla iliþkiler Müdürü",
+        "Rate": 23,
+        "Contact": {
+          "Address": "Þahnur Ýþ Haný 396 21364 Kocaeli",
           "EMail": "irem96@karabocek.com.tr",
           "PhoneNumber": "+905582216550"
         }
       },
       {
         "FullName": "Baran Özberk",
-        "TRId": "49522287964",
+        "TRId": "58490887830",
         "Department": "Teknik Servis",
         "Position": "Elektrikçi",
+        "Rate": 3,
         "Contact": {
-          "Address": "Köylüoglu Caddesi 30 17530 Afyonkarahisar",
+          "Address": "Köylüoðlu Caddesi 30 17530 Afyonkarahisar",
           "EMail": "vtekand@kormukcu.edu.tr",
           "PhoneNumber": "0 543 108 73 85"
-        }},
+        }
+      },
       {
-        "FullName": "Sahnur Yilmazer",
-        "TRId": "49522287964",
-        "Department": "Saglik, Masaj ve Spor",
+        "FullName": "Þahnur Yýlmazer",
+        "TRId": "79309626440",
+        "Department": "Saðlýk, Masaj ve Spor",
         "Position": "Masör",
+        "Rate": 17,
         "Contact": {
-          "Address": "Atan Kavsagi 803 74659 Edirne",
+          "Address": "Atan Kavþaðý 803 74659 Edirne",
           "EMail": "burak.kahveci@ekici.edu.tr",
           "PhoneNumber": "+90 548 692 98 21"
         }
       }
     ],
     "Comments": [
-{
-        "Customer": "Ebru Besok",
+      {
+        "Customer": {
+          "Fullname": "Ebru Beþok"
+        },
         "Content": "Havuzu Çocuklarla gelmek için çok uygun"
       },
       {
-        "Customer": "Ada Pekkan",
+        "Customer": {
+          "Fullname": "Ada Pekkan"
+        },
         "Content": "Önümüzdeki senede gelmeyi dört gözle bekliyorum"
       },
- {
-        "Customer": "Irem Erginsoy",
-        "Content": "Eylenceli aktiviteleriyle çok canayakin bir otel"
+      {
+        "Customer": {
+          "Fullname": "Ýrem Erginsoy"
+        },
+        "Content": "Eylenceli aktiviteleriyle çok canayakýn bir otel"
       }
     ]
   },
   {
     "Id": 9,
     "Name": "Kaya Otel",
-    "City": "Izmir",
+    "City": "Ýzmir",
     "Town": "Alsancak",
-    "NumRooms": 355,
-    "Point": 1,
-    "Raters": 19,
+    "NumRooms": 350,
+    "Stars": 4,
+    "Point": 20,
+    "Raters": 6,
+    "Rate": 0,
     "Staff": [
       {
-        "FullName": "Askin Eksioglu",
-        "TRId": "49522287964",
-        "Department": "Çamasir Hane",
-        "Position": "Çamasirhane Sefi",
+        "FullName": "Aþkýn Ekþioðlu",
+        "TRId": "82330033620",
+        "Department": "Çamaþýr Hane",
+        "Position": "Çamaþýrhane Þefi",
+        "Rate": 16,
         "Contact": {
-          "Address": "Pekkan Duragi 891 40761 Yalova",
+          "Address": "Pekkan Duraðý 891 40761 Yalova",
           "EMail": "onur38@oymen.edu.tr",
           "PhoneNumber": "+905002604517"
         }
       },
       {
-        "FullName": "Sahnur Özkara",
-        "TRId": "49522287964",
+        "FullName": "Þahnur Özkara",
+        "TRId": "46650720998",
         "Department": "Teknik Servis",
-        "Position": "Sihhi tesisatçi",
+        "Position": "Sýhhi tesisatçý",
+        "Rate": 10,
         "Contact": {
-          "Address": "Emel Is Hani 91 17372 Kocaeli",
+          "Address": "Emel Ýþ Haný 91 17372 Kocaeli",
           "EMail": "doruk10@mynet.com",
           "PhoneNumber": "+90 538 999 74 10"
         }
       },
       {
         "FullName": "Burak Korol",
-        "TRId": "49522287964",
+        "TRId": "56670262880",
         "Department": "Cankurtaran ve Havuz Görevlisi",
         "Position": "Cankurtaran",
+        "Rate": 14,
         "Contact": {
           "Address": "Kerem Sokak 39 47776 Amasya",
           "EMail": "alniacik.emirhan@mynet.com",
           "PhoneNumber": "+90 551 567 68 93"
         }
+      },
+      {
+        "FullName": "Berk Menemencioðlu",
+        "TRId": "23644047842",
+        "Department": "Teknik Servis",
+        "Position": "Elektrikçi",
+        "Rate": 10,
+        "Contact": {
+          "Address": "Canberk Duraðý 001 58215 Mardin",
+          "EMail": "hozdogan@gmail.com",
+          "PhoneNumber": "0 546 697 17 40"
+        }
       }
     ],
     "Comments": [
       {
-        "Customer": "Burcu Kaya",
-        "Content": "Izmirin elit yerlerin hos bi otel"
+        "Customer": {
+          "Fullname": "Burcu Kaya"
+        },
+        "Content": "Ýzmirin elit yerlerin hoþ bi otel"
       },
       {
-        "Customer": "Esma Çapanoglu",
+        "Customer": {
+          "Fullname": "Esma Çapanoðlu"
+        },
         "Content": "Çok Kötü bir otel"
       },
       {
-        "Customer": "Çagan Aybar",
-        "Content": "Internet çok yavasti ama hizmet güzeldi"
+        "Customer": {
+          "Fullname": "Çaðan Aybar"
+        },
+        "Content": "Ýnternet çok yavaþtý ama hizmet güzeldi"
       },
       {
-        "Customer": "Brad Pit",
+        "Customer": {
+          "Fullname": "Brad Pit"
+        },
         "Content": "Such a lovely Hotel"
       },
       {
-        "Customer": "Megan Fox",
+        "Customer": {
+          "Fullname": "Megan Fox"
+        },
         "Content": "I love the hospitality and helpful crew"
       }
     ]
-  
   }
 ]

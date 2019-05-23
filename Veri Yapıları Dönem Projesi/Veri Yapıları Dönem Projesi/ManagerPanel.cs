@@ -23,7 +23,6 @@ namespace Veri_Yapıları_Dönem_Projesi
             gbHotels.Location = new Point(12, 12);
             gbHotels.Visible = true;
         }
-
         private void ManagerPanel_Load(object sender, EventArgs e)
         {
             Singleton.Instance().hotels.InOrder();
@@ -39,13 +38,11 @@ namespace Veri_Yapıları_Dönem_Projesi
             dgwStaff.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
             #endregion
         }
-
         private void ManagerPanel_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
             WindowManager.CloseForm(this);
         }
-
         #region STAFF
         private void btnBackHotels_Click(object sender, EventArgs e)
         {
@@ -56,7 +53,7 @@ namespace Veri_Yapıları_Dönem_Projesi
         {
             if (dgwStaff.SelectedRows.Count > 0)
             {
-                int rate = Convert.ToInt32(Interaction.InputBox("Puan Girişi", "Personele Verdiğiniz Puan", "Örn: 1-10", 0, 0));
+                int rate = Convert.ToInt32(Interaction.InputBox("Puan Girişi", "Personele Verdiğiniz Puan", "Örn: 1-10", (Screen.PrimaryScreen.Bounds.Width / 2) - 175, (Screen.PrimaryScreen.Bounds.Height / 2) - 100));
                 if (rate < 1 || rate > 10)
                     MessageBox.Show("Hatalı Değer Girdiniz");
                 else
@@ -72,7 +69,7 @@ namespace Veri_Yapıları_Dönem_Projesi
         }
         private void btnListStaffForDeparmant_Click(object sender, EventArgs e)
         {
-            string department = Interaction.InputBox("Departman Bilgisi", "Departman İsmi Giriniz", "Örn:Mutfak", 0, 0);
+            string department = Interaction.InputBox("Departman Bilgisi", "Departman İsmi Giriniz", "Örn:Mutfak", (Screen.PrimaryScreen.Bounds.Width / 2) - 175, (Screen.PrimaryScreen.Bounds.Height / 2) - 100);
             List<Staff> filterStaff = Singleton.Instance().hotels.PrintTree().Where(x => x.Id == selectedHotel.Id).ToList()[0].Staff.Where(x => x.Department == department).ToList();
             if (filterStaff.Count != 0)
                 dgwStaff.DataSource = filterStaff;
@@ -105,7 +102,6 @@ namespace Veri_Yapıları_Dönem_Projesi
         }
         #endregion
         #endregion
-
         #region HOTEL
         private void dgwHotels_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
@@ -149,9 +145,7 @@ namespace Veri_Yapıları_Dönem_Projesi
                 dgwHotels.DataSource = Singleton.Instance().hotels.PrintTree();
             }
         }
-
         #endregion
-
         #endregion
     }
 }

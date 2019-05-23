@@ -19,7 +19,6 @@ namespace Veri_Yapıları_Dönem_Projesi
             Singleton.Instance().Initialize();
             WindowManager.OpenForm(this);
         }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Manager manager = null;
@@ -28,19 +27,16 @@ namespace Veri_Yapıları_Dönem_Projesi
             {
                 ManagerPanel managerPanel = new ManagerPanel();
                 WindowManager.OpenForm(managerPanel);
+                WindowManager.CloseForm(this);
             }
         }
-
         private void btnCustomerLogin_Click(object sender, EventArgs e)
         {
-            
-            string FullName = Interaction.InputBox("Bilgi Girişi", "Adınızı veSoyadınızı giriniz.", "Örn: Ekrem İmamoğlu ", 0, 0);
-            
-
+            string FullName = Interaction.InputBox("Bilgi Girişi", "Adınızı ve Soyadınızı giriniz.", "Örn: Ekrem İmamoğlu ", (Screen.PrimaryScreen.Bounds.Width / 2) - 175, (Screen.PrimaryScreen.Bounds.Height / 2) - 100);
             CustomerPanel customerPanel = new CustomerPanel(FullName);
             WindowManager.OpenForm(customerPanel);
+            WindowManager.CloseForm(this);
         }
-
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;

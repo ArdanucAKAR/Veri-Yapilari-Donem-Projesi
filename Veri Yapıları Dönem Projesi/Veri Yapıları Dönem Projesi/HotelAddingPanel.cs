@@ -18,13 +18,11 @@ namespace Veri_Yapıları_Dönem_Projesi
             InitializeComponent();
             dgwdgwHotels = d;
         }
-
         private void HotelAddingPanel_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
             WindowManager.CloseForm(this);
         }
-
         private void btnHotelSave_Click(object sender, EventArgs e)
         {
             Hotel h = new Hotel() {
