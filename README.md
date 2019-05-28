@@ -1,6 +1,6 @@
-
-
-<center><img src="https://lh3.googleusercontent.com/dVfLuPxUi3fBkx5szWoz1ZHyB4AiBoPKgexN2d_aeYBReeqwQXpExbJcDXgbtsZWt62xOJaQWmPMZrjGJex-p2MK9yPQ2wiF-JTGLztYP_h-R7N0j15QdDTuIObo6ZpzwlrZR8vD"/></center>
+<p align="center"> 
+  <img align="center" src="https://lh3.googleusercontent.com/dVfLuPxUi3fBkx5szWoz1ZHyB4AiBoPKgexN2d_aeYBReeqwQXpExbJcDXgbtsZWt62xOJaQWmPMZrjGJex-p2MK9yPQ2wiF-JTGLztYP_h-R7N0j15QdDTuIObo6ZpzwlrZR8vD"/>
+  </p>
 
 # Veri Yapıları - Hotels Assemble
 
@@ -88,7 +88,7 @@ Otellerin il ve ilçesine göre filtelenip, ratelerine göre listelenmesi
 
 Otellerin ikili ağaç’a eklenip preorder inorder postorder yapılabilmesi ve ağacın derinliğini ve ekli olan düğümlerin sayısını görebilmesi
 
-# Kısa Tanımı;
+## Kısa Tanımı;
 
 Büyük otel zincirlerinin tek bir program altında bütün otelleri yönetmesine,personel eklenmesine,personellerin puanlandırılmasında, otel yetkililerine yardımcı olacak bunun yanında müşterilerin kendisine en yakın en iyi ve kendisine en çok hitap eden otelleri bulmasına yardımcı olacak yazılım sistemidir.
 
@@ -180,21 +180,21 @@ Büyük otel zincirlerinin tek bir program altında bütün otelleri yönetmesin
 
 Ayrı gayrı yok 25 saat boyunca birlikte proje ile uğraştık.
 
-# Bu 25 saat içerisinde kimin ne yaptığı bellidir.
+  
+  
+  
+  
+  
 
-
-  
-  
-  
-  
-  
 
 # Ekran Görüntüleri ;
+![](https://lh6.googleusercontent.com/dYFR5K3hiAok_h8U2LCy1CW-GE7QaBFIw8qcxLR6Y3BDYOuDGfKtGe5Nct1vogZz1YfMkjJ88o-rKvXkCr26qkT7xwaYZBHOlj-pGr_jY1TNKjp6zB3dssxqyse_NUHJvn3eh2t7)![](https://lh3.googleusercontent.com/bsdd6pIkkPfxkOCgmLpobC5VeB2pr91mgFzX-ZIV_SpktjHSQ7OJa5JU3XMIycFSxGb1KxDrXsNRXomhQlfNjt0z31wa64PgcNZjBz5gE8PPcycopTEBcZmH0nYLJJ84ADOrAMcB)![](https://lh3.googleusercontent.com/BBSviD1Ks7s7Q39hN9iSlw1Rjlw4hGQARYcV7i4WDnGg87ix-26eOAFxYvr6gWpVK2j8vOBEmYtKUnyJCgMqpiPkwb7RSpIL49wJggIoc4uPdI2XG14CO7ADkFyraX_rgMHES0Sr)
 
-![](https://lh6.googleusercontent.com/dYFR5K3hiAok_h8U2LCy1CW-GE7QaBFIw8qcxLR6Y3BDYOuDGfKtGe5Nct1vogZz1YfMkjJ88o-rKvXkCr26qkT7xwaYZBHOlj-pGr_jY1TNKjp6zB3dssxqyse_NUHJvn3eh2t7)
+# ![](https://lh6.googleusercontent.com/1pB20eoa7l71l4-iQHIhygF-loJgwJjSA-ZRJhYvhVZck_zyRYwEblWnVJiQhm1-XrIG4stxTFIe2SbKqVMBxJnXjz1fJyQ0xNIbK8F1m0OzS2NzmmdPxW9a7mlQLf7r1VxeAuE4)
 
   
-  
+
+![](https://lh6.googleusercontent.com/pHOPueIILTee9HX8nL1jyc3ltIGwLkjSqV-smSlkapHAQyDeTPB22LrxGsgQWwIjDAgLsAwzjQLoVLQWoJCxbtLC_fEmSWjvbgv5cO5Iq7BVOdGVN14pQBumE_VsT_YUifqeke3I)
   
   
   
