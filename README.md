@@ -10,11 +10,11 @@
 
 ### Proje Üyeleri;
 
-Ardanuc Akar 162804011
+[Ardanuc Akar](https://github.com/ardanucakar) 162804011
 
-Ulaş Gökçe 172802052
+[Ulaş Gökçe](https://github.com/ulasgokce) 172802052
 
-Volkan Kahraman 162804002
+[Volkan Kahraman](https://github.com/volkankahraman) 162804002
 
   
 
